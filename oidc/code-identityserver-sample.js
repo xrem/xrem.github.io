@@ -28,13 +28,13 @@ Oidc.Log.logger = console;
 Oidc.Log.level = Oidc.Log.DEBUG;
 console.log("Using oidc-client version: ", Oidc.Version);
 
-var url = window.location.href;
+var url = location.href.substring(0, location.href.lastIndexOf('/'));
 
 var settings = {
     authority: localStorage.getItem('cfg-authority'),
     client_id: localStorage.getItem('cfg-clientId'),
     //client_id: 'interactive.public.short',
-    redirect_uri: url + '/code-identityserver-sample.html',
+    redirect_uri: location.href.split('?')[0],
     // post_logout_redirect_uri: url + '/code-identityserver-sample.html',
     response_type: 'code',
     //response_mode: 'fragment',

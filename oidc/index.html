@@ -26,7 +26,8 @@
     </body>
     <script src='log.js'></script>
     <script>
-        document.getElementById('redirectUrl').value = location.href + '/code-identityserver-sample.html'; 
+        let url = location.href.split('?')[0];
+        document.getElementById('redirectUrl').value = url.substring(0, url.lastIndexOf('/')) + '/code-identityserver-sample.html'; 
         document.getElementById('submit').addEventListener("click", applyConfiguration, false);
         function readConfig() {
             log("Current configuration:");
