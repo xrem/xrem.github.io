@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AuthCode Flow + PKCE using OIDC-Client Test</title>
+        <link rel='stylesheet' href='app.css'>
+    </head>
+    <body>
+        <div>
+            Configure your client redirect URL to: <br>
+            <input type="text" id="redirectUrl" readonly value=". . ." />
+        </div>
+        <hr>
+        <ul>
+            <li><label>Authority: </label><input type="text" id="authority" placeholder="https://demo.identityserver.io/"/></li>
+            <li><label>ClientId: </label><input type="text" id="clientId" /></li>
+            <li><label>Scopes: </label><input type="text" id="scopes" placeholder="openid offline_access"/></li>
+            <li><label>DeviceID: </label><input type="text" id="deviceId" placeholder="1824D326-43CE-4676-8168-83AEC699F677"/></li>
+            <li><label>Login Hint: </label><input type="text" id="login" placeholder="user@mail.com"/></li>
+        </ul>
+        <hr>
+        <button id="submit"> Apply configuration </button>
+        <hr>
+        <a href="/code-identityserver-sample.html"> Run OIDC-Client to authorize using code-flow with PKCE </a>
+        <hr>
+        <pre id='out'></pre>
+    </body>
+    <script src='log.js'></script>
+    <script>
+        document.getElementById('redirectUrl').value = location.href + '/code-identityserver-sample.html'; 
+        document.getElementById('submit').addEventListener("click", applyConfiguration, false);
+        function readConfig() {
+            log("Current configuration:");
+            log(`cfg-authority = ${localStorage.getItem('cfg-authority')}`);
+            log(`cfg-clientId = ${localStorage.getItem('cfg-clientId')}`);
+            log(`cfg-scopes = ${localStorage.getItem('cfg-scopes')}`);
+            log(`cfg-acr = ${localStorage.getItem('cfg-acr')}`);
+            log(`cfg-login = ${localStorage.getItem('cfg-login')}`);
+        }
+        function applyConfiguration(){
+            const authority = document.getElementById('authority').value;
+            const clientId = document.getElementById('clientId').value;
+            const scopes = document.getElementById('scopes').value;
+            const deviceId = document.getElementById('deviceId').value;
+            const login = document.getElementById('login').value;
+            localStorage.setItem('cfg-authority', authority);
+            localStorage.setItem('cfg-clientId', clientId);
+            localStorage.setItem('cfg-scopes', scopes);
+            localStorage.setItem('cfg-acr', `deviceId:${deviceId}`);
+            localStorage.setItem('cfg-login', login);
+            readConfig();
+        }
+        window.onload = readConfig;
+    </script>
+</html>

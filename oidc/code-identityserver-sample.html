@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>identityserver test against https://demo.identityserver.io/</title>
+        <link rel='stylesheet' href='app.css'>
+    </head>
+    <body>
+        <a href="/index.html"> Back to configuration </a> <br>
+        <a href="/code-identityserver-sample.html"> Authorize again </a> <br> <br>
+        <div>
+            <button id='clearState'>Clear stale state</button>
+            <button id='getUser'>Get actual authorization state</button>
+            <button id='removeUser'>Reset authorization state</button>
+            <button id='iframeSignin'>Refresh token</button>
+        </div>
+        <!-- <div>
+            <button id='startSigninMainWindow'>start signin main window</button>
+            <button id='endSigninMainWindow'>end signin main window</button>
+            <button id='startSigninMainWindowDiffCallbackPage'>start signin main window with different callback page</button>
+        </div> -->
+        <!--
+        <div>
+            <button id='startSignoutMainWindow'>start signout main window</button>
+            <button id='endSignoutMainWindow'>end signout main window</button>
+        </div>
+        <div>
+            <button id='popupSignout'>signout with popup</button>
+        </div>
+        -->
+        <pre id='out'></pre>
+        
+        <script src='oidc-client.js'></script>
+        <script src='log.js'></script>
+        <script src='code-identityserver-sample.js'></script>
+        <script src='jwt-decode.js'></script>
+    </body>
+</html>
