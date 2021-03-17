@@ -18,6 +18,7 @@
             <li><label>Login Hint: </label><input type="text" id="login" placeholder="user@mail.com"/></li>
         </ul>
         <hr>
+        <button id="load"> Load configuration </button>
         <button id="submit"> Apply configuration </button>
         <hr>
         <a href="code-identityserver-sample.html"> Run OIDC-Client to authorize using code-flow with PKCE </a>
@@ -29,6 +30,7 @@
         let url = location.href.split('?')[0];
         document.getElementById('redirectUrl').value = url.substring(0, url.lastIndexOf('/')) + '/code-identityserver-sample.html'; 
         document.getElementById('submit').addEventListener("click", applyConfiguration, false);
+        document.getElementById('load').addEventListener("click", loadConfiguration, false);
         function readConfig() {
             log("Current configuration:");
             log(`cfg-authority = ${localStorage.getItem('cfg-authority')}`);
@@ -49,6 +51,13 @@
             localStorage.setItem('cfg-acr', `deviceId:${deviceId}`);
             localStorage.setItem('cfg-login', login);
             readConfig();
+        }
+        function loadConfiguration(){
+            document.getElementById('authority').value = localStorage.getItem('cfg-authority');
+            document.getElementById('clientId').value = localStorage.getItem('cfg-clientId');
+            document.getElementById('scopes').value = localStorage.getItem('cfg-scopes');
+            document.getElementById('deviceId').value = localStorage.getItem('cfg-acr').substr("deviceId:".length);
+            document.getElementById('login').value = localStorage.getItem('cfg-login');
         }
         window.onload = readConfig;
     </script>
