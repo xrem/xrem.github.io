@@ -16,25 +16,94 @@
 			display: flex;
 			flex-direction: column;
 		}
+		.accordion-button {
+			font-size: 1.3rem !important;
+		}
 	</style>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div>
+	<div style="max-width: 600px">
 		<h1> Lectures </h1>
-		<h2> 06.09.2021 </h2>
-		<a href="https://drive.google.com/file/d/1AEgLAAENdNh1x26eZhwtscx6twMhtPXp/view?usp=sharing">Как устроен Web</a>
-		<a href="https://drive.google.com/file/d/1LvmeIKXENLtoJ4SHW_SSMg6NmJ9aXjb-/view?usp=sharing"> HTML </a>
-		<h2> 13.09.2021 </h2>
-		<a href="https://drive.google.com/file/d/1ewC5Oqdv8MLxGiWFuz1dZ_4cvUPoFuZC/view?usp=sharing">HTML + CSS</a>
-		<a href="https://drive.google.com/file/d/1_yHPyh-1HeYy4OJD-IWrLoHOtGQuZUyq/view?usp=sharing">Blocks</a>
-		<a href="https://docs.google.com/presentation/d/1hn-J0_UHTAizBsKXica7vdI3nPo0z4RZ/edit?usp=sharing&ouid=111575169959601104712&rtpof=true&sd=true">Block aligns</a>
-		<a href="https://docs.google.com/presentation/d/1fXMm_TbmjjwC4pNUaXuyqO8x_DSFI8Zk/edit?usp=sharing&ouid=111575169959601104712&rtpof=true&sd=true">FLEX</a>
-		<h2> 20.09.2021 </h2>
-		<a href="https://docs.google.com/presentation/d/1aVl3JpsYSMjrLv0IwDevmyfjuiELzub0/edit?usp=sharing&ouid=111575169959601104712&rtpof=true&sd=true">Основы вёрстки</a>
-		<h2> 27.09.2021 </h2>
-		<a href="https://www.dropbox.com/s/bbjqnfa9mpjk2kf/css.pdf?dl=0"> CSS </a>
+		<div class="accordion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="head06902021"> 
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse06902021" aria-controls="collapse06902021">
+						06.09.2021
+					</button>
+				</h2>
+				<div id="collapse06902021" class="accordion-collapse collapse" data-bs-parent="#head06902021">
+					<div class="accordion-body">
+						<button type="button" class="btn btn-link">
+							<a href="https://drive.google.com/file/d/1AEgLAAENdNh1x26eZhwtscx6twMhtPXp/view?usp=sharing">Как устроен Web</a>
+						</button>
+						<button type="button" class="btn btn-link">
+							<a href="https://drive.google.com/file/d/1LvmeIKXENLtoJ4SHW_SSMg6NmJ9aXjb-/view?usp=sharing">HTML</a>
+						</button>
+					 </div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="head13092021"> 
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13902021" aria-controls="collapse13902021">
+						13.09.2021
+					</button>
+				</h2>
+				<div id="collapse13902021" class="accordion-collapse collapse" data-bs-parent="#head13092021">
+					<div class="accordion-body">
+						<button type="button" class="btn btn-link">
+							<a href="https://drive.google.com/file/d/1ewC5Oqdv8MLxGiWFuz1dZ_4cvUPoFuZC/view?usp=sharing">HTML + CSS</a>
+						</button>
+						<button type="button" class="btn btn-link">
+							<a href="https://drive.google.com/file/d/1_yHPyh-1HeYy4OJD-IWrLoHOtGQuZUyq/view?usp=sharing">Blocks</a>
+						</button>
+						<button type="button" class="btn btn-link">
+							<a href="https://docs.google.com/presentation/d/1hn-J0_UHTAizBsKXica7vdI3nPo0z4RZ/edit?usp=sharing&ouid=111575169959601104712&rtpof=true&sd=true">Block aligns</a>
+						</button>
+						<button type="button" class="btn btn-link">
+							<a href="https://docs.google.com/presentation/d/1fXMm_TbmjjwC4pNUaXuyqO8x_DSFI8Zk/edit?usp=sharing&ouid=111575169959601104712&rtpof=true&sd=true">FLEX</a>
+						</button>
+					 </div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="head20902021"> 
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse20902021" aria-controls="collapse20902021">
+						20.09.2021
+					</button>
+				</h2>
+				<div id="collapse20902021" class="accordion-collapse collapse" data-bs-parent="#head20902021">
+					<div class="accordion-body">
+						<button type="button" class="btn btn-link">
+							<a href="https://docs.google.com/presentation/d/1aVl3JpsYSMjrLv0IwDevmyfjuiELzub0/edit?usp=sharing&ouid=111575169959601104712&rtpof=true&sd=true">Основы вёрстки</a>
+						</button>
+					 </div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="head27902021"> 
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse27902021" aria-controls="collapse27902021">
+						27.09.2021
+					</button>
+				</h2>
+				<div id="collapse27902021" class="accordion-collapse collapse" data-bs-parent="#head27902021">
+					<div class="accordion-body">
+						<button type="button" class="btn btn-link">
+							<a href="https://www.dropbox.com/s/bbjqnfa9mpjk2kf/css.pdf?dl=0">CSS</a>
+						</button>
+						<button type="button" class="btn btn-link">
+							<a href="https://learn.javascript.ru/css-units">CSS Units</a>
+						</button>
+						<button type="button" class="btn btn-link">
+							<a href="https://docs.google.com/presentation/d/1gOiJgqK5ZeqPvux3DkIxSgp8ydkIM4Rg/edit?usp=sharing&ouid=111575169959601104712&rtpof=true&sd=true">CSS Методологии</a>
+						</button>
+					 </div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<a href="https://docs.google.com/document/d/1ybmhKPyUyZvGaJI-3MrM9AleAW9Kzng8/edit?usp=sharing&ouid=111575169959601104712&rtpof=true&sd=true"> Лабораторные работы </a>
 	</div>
-	<hr>
-	<a href="https://docs.google.com/document/d/1ybmhKPyUyZvGaJI-3MrM9AleAW9Kzng8/edit?usp=sharing&ouid=111575169959601104712&rtpof=true&sd=true"> Лабораторные работы </a>
 </body>
 </html>
