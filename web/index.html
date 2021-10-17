@@ -152,5 +152,16 @@
 		<br>
 		<a href="r1.html"> Результаты первого рубежного контроля </a>
 	</div>
+	<script type="text/javascript">
+		// Define anonymous function
+		(function() {
+			// When document ready...
+			document.addEventListener("DOMContentLoaded", function() {
+				// Expand latest lecture block.
+				Array.from(document.getElementsByClassName("accordion-button")).slice(-1)[0].click();
+			});
+		// And execute that anonymous & fully incapsulated function.
+		})();
+	</script>
 </body>
 </html>
