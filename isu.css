@@ -111,7 +111,7 @@ html body .btn[disabled] {
     display: none;
 }
 .theme-isu .breadcrumb {
-    background: url(`+headerImg+`) no-repeat center center!important;
+    background: url(https://trall.co/isu_header.jpg) no-repeat center center!important;
     padding: 0!important;
     padding-bottom: 30.9%!important;
     background-size: cover!important;
@@ -238,7 +238,7 @@ html .page-profile .profile-block {
     content: '';
     width: 240px;
     height: 240px;
-    background: url(https://isu.ifmo.ru/userpics/`+isuId+`.jpg);
+    background: url(https://isu.ifmo.ru/userpics/184321.jpg);
     background-size: 100%;
     border-radius: 8px;
     border: 2px solid #fff;
