@@ -222,11 +222,27 @@
 					 </div>
 				</div>
 			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="head06122021"> 
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse06122021" aria-controls="collapse06122021">
+						06.12.2021
+					</button>
+				</h2>
+				<div id="collapse06122021" class="accordion-collapse collapse" data-bs-parent="#head06122021">
+					<div class="accordion-body">
+						<button type="button" class="btn btn-link">
+							<a href="https://docs.google.com/presentation/d/1ne7ZszfgIFTzG_M1Yl5EyAuoqRwG4Fyd/edit?usp=sharing&ouid=111575169959601104712&rtpof=true&sd=true">Proxy object</a>
+						</button>
+					 </div>
+				</div>
+			</div>
 		</div>
 		<hr>
 		<a href="https://docs.google.com/document/d/1ybmhKPyUyZvGaJI-3MrM9AleAW9Kzng8/edit?usp=sharing&ouid=111575169959601104712&rtpof=true&sd=true"> Лабораторные работы </a>
 		<br>
 		<a href="r1.html"> Результаты первого рубежного контроля </a>
+		<br>
+		<a href="javascript:getAnswers()"> Ответы на рубежку </a>
 	</div>
 	<script type="text/javascript">
 		// Define anonymous function
@@ -238,6 +254,12 @@
 			});
 		// And execute that anonymous & fully incapsulated function.
 		})();
+
+		window.getAnswers = () => {
+			location.replace(decodeURIComponent(atob("aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1kUXc0dzlXZ1hjUQ==").split('').map(function(c) {
+		        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+		    }).join('')));
+		}
 	</script>
 </body>
 </html>
