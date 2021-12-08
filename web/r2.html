@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Результаты второго рубежного тестирования</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@araujoigor/json-grid/dist/json-grid.css">
+  <script src="https://unpkg.com/@araujoigor/json-grid/dist/JSONGrid.min.js"></script>
+</head>
+
+<body style="font-size: 18px">
+  <style>
+    .json-grid-container td {
+      border: 1px solid #bbb;
+      padding: 3px 10px 3px 5px;
+    }
+  </style>
+  <a href="javascript:history.back()">Назад</a>
+  <hr>
+  <div id="container" style="font-size: 18px"></div>
+  <script>
+    (async () => {
+      const container = document.getElementById("container");
+      const response = await fetch("r2.json");
+      const data = await response.json();
+      console.log(data);
+      const jsonGrid = new JSONGrid(data, container);
+      jsonGrid.render();
+    })();
+  </script>
+</body>
+</html>

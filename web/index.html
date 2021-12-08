@@ -242,7 +242,7 @@
 		<br>
 		<a href="r1.html"> Результаты первого рубежного контроля </a>
 		<br>
-		<a href="javascript:getAnswers()"> Ответы на рубежку </a>
+		<a href="r2.html"> Результаты второго рубежного контроля </a>
 	</div>
 	<script type="text/javascript">
 		// Define anonymous function
@@ -254,12 +254,6 @@
 			});
 		// And execute that anonymous & fully incapsulated function.
 		})();
-
-		window.getAnswers = () => {
-			location.replace(decodeURIComponent(atob("aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1kUXc0dzlXZ1hjUQ==").split('').map(function(c) {
-		        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-		    }).join('')));
-		}
 	</script>
 </body>
 </html>
