@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xrem.github.io</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+      <style>  
+        :root {
+          --ion-safe-area-top: 20px;
+          --ion-safe-area-bottom: 22px;
+        }
+
+        ion-card {
+          min-height: 400px;
+        }
+
+        img {
+          max-width: 400px;
+          max-height: 250px;
+        }
+      </style>
+  </head>
+  <body>
+    <ion-app>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Table of content</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content padding>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <div>
+                <ion-card href="oidc/index.html">
+              <ion-card-header>
+                <ion-card-subtitle>Internal</ion-card-subtitle>
+                <ion-card-title>OIDC Client</ion-card-title>
+              </ion-card-header>
+
+              <ion-card-content>
+                <img src="images/oidc.png">
+                <p> OIDC Client for testing identity server v4 for example </p>
+              </ion-card-content>
+            </ion-card>
+              </div>
+            </ion-col>
+            <ion-col>
+              <div>
+                <ion-card href="web/index.html">
+              <ion-card-header>
+                <ion-card-subtitle>ITMO</ion-card-subtitle>
+                <ion-card-title>Web-Programming</ion-card-title>
+              </ion-card-header>
+
+              <ion-card-content>
+                <img src="images/avaweb.png">
+                <p> Page contains all related materials for web-programming course </p>
+              </ion-card-content>
+            </ion-card>
+              </div>
+            </ion-col>
+            <ion-col>
+              <div>
+                <ion-card href="oop/index.html">
+              <ion-card-header>
+                <ion-card-subtitle>ITMO</ion-card-subtitle>
+                <ion-card-title>Object-Oriented Programming</ion-card-title>
+              </ion-card-header>
+
+              <ion-card-content>
+                <img src="images/oop.jpg">
+                <p> Additional docs for me and students </p>
+              </ion-card-content>
+            </ion-card>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-content>
+    </ion-app>
+  </body>
+</html>
