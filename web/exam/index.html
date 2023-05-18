@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exam</title>
+</head>
+<body>
+        <h2> Ваш номер ИСУ: </h2>
+        <input type="text" id="id" />
+        <input type="submit" id="s" />
+        <br> <br>
+        <a href="https://drive.google.com/drive/folders/1cscO2Be815CmD-2L7bKqfjHPlLI3gGQr?usp=share_link"> User Stories </a>
+        <script type="text/javascript">
+                s.onclick = (e) => {
+                        e.preventDefault()
+                        location.replace(`http://46.151.26.143:3000/gen/${id.value.trim()}`)
+                }
+        </script>
+</body>
+</html>
