@@ -262,6 +262,10 @@ html .page-profile .profile-block {
 }
 */
 
+#pers-info-block:after {
+    content: image-set('https://i.imgur.com/R7jMj5p.png' 1x, 'https://i.imgur.com/Ny61agS.png' 1x)
+}
+
 .isu-presents ul {
     display: flex;
     justify-content: center;
