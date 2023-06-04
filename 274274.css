@@ -1,0 +1,295 @@
+body, html {
+    font-family: arial, sans-serif;
+}
+
+body {
+    margin-top: 30px!important;
+}
+
+.theme-isu #main-navbar .navbar-header, .theme-isu #main-navbar {
+    background: #ee8208!important;
+}
+#main-navbar .navbar-header {
+    padding-left: 0!important;
+}
+.theme-isu #main-navbar #main-menu-toggle {
+    background: #da7f17!important;
+    display: none;
+}
+#main-navbar .navbar-inner {
+    max-width: 1295px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.theme-isu #main-navbar .navbar-header a {
+    background: url(https://ok.ru/res/i/p/toolbar/logo_wide.png) no-repeat;
+    padding: 0;
+    width: 144px!important;
+    height: 29px!important;
+    margin-top: 9px;
+    margin-left: 16px;
+}
+.theme-isu #main-navbar .navbar-header .navbar-brand-name, #main-navbar .navbar-header a > img, .subsystem-logo, #main-menu .menu-content.top.show {
+    display:none!important
+}
+.photo-controls {
+    margin-top: 32px;
+}
+
+.msg_compose_to {
+    font-size: 14px;
+}
+.btn {
+    font-size: 14px!important;
+    background: #e47d08!important;
+    border: 0!important;
+    border-radius: 47px!important;
+    color: white!important;
+}
+.btn:hover {
+    background: #e47d08!important;
+}
+html body .btn[disabled] {
+    border: 1px solid rgba(0,0,0,.12)!important;
+    color: #BBB!important;
+}
+.panel-heading {
+    display: none;
+}
+.panel, .tab-content.tab-content-bordered {
+    border: 0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.panel.profile-photo {
+    overflow: initial
+}
+.nav-tabs>li>a {
+    background: transparent!important;
+    margin-right: 16px;
+    border-bottom: 3px solid transparent!important;
+    padding: 10px 0!important;
+    color: #999!important;
+}
+.nav-tabs>li>a:hover {
+    border-bottom-color: #ddd!important; 
+}
+.nav-tabs li.active>a, .nav-tabs>li>a:focus {
+    border-bottom-color: #ee8208!important;
+    color: #333!important;
+}
+#content-wrapper, body, .theme-isu #main-navbar .dropdown-menu li>a:hover {
+    background: #f0f0f0!important;
+}
+#main-navbar li > a.user-menu::before {
+    background: #da7f17!important;
+}
+
+#content-wrapper {
+    max-width: 1008px;
+}
+.profile-full-name {
+    width: 100%!important;
+    height: 108px!important;
+    padding-top: 0!important;
+    padding-left: 280px!important;
+    background-color: white!important;
+}
+.page-profile .right-col {
+    margin-top: -50px!important;
+    padding-left: 32px!important;
+}
+.page-profile .profile-content .tab-content {
+    margin-top: 30px!important;
+}
+.panel.profile-photo {
+    margin-left: 13px!important;
+    padding: 4px!important;
+    border-radius: 4px!important;
+}
+.theme-isu .breadcrumb li {
+    display: none;
+}
+.theme-isu .breadcrumb {
+    background: url(https://i.imgur.com/GJqbcr1_d.webp?maxwidth=760&fidelity=grand) no-repeat center center!important;
+    padding: 0!important;
+    padding-bottom: 30.9%!important;
+    background-size: cover!important;
+}
+.theme-isu .breadcrumb:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 300px;
+    background-image: linear-gradient(
+-180deg
+,rgba(0,0,0,0) 0,rgba(0,0,0,.03) 60%,rgba(0,0,0,.15) 75%,rgba(0,0,0,.5) 100%);
+    pointer-events: none;
+}
+
+
+#content-wrapper > div:nth-of-type(1) {
+    padding-bottom: 0!important;
+}
+.theme-isu #main-navbar .navbar-collapse {
+    background: #ee8208;
+}
+.theme-isu #main-navbar .dropdown>a, .theme-isu #main-navbar .nav>li>a, .theme-isu #main-navbar .navbar-toggle, .user-menu::after {
+    color: #fff;
+}
+.user-menu::after {
+    opacity: 0.7
+}
+.theme-isu #main-navbar .navbar-form #f50.form-control {
+    background: #ffffffc2;
+    border-radius: 30px;
+}
+#main-navbar li > a.user-menu {
+    border-left: 0;
+}
+
+.theme-isu .mmc-dropdown-open-ul {
+    background: #ffffff!important;
+    box-shadow: initial!important;
+}
+
+.theme-isu #main-menu-bg {
+    display: none;
+}
+
+.theme-isu #main-menu .mm-dropdown>ul, .theme-isu #main-menu .mmc-dropdown-open-ul {
+    background: #f9f9f9!important;
+}
+
+.theme-isu #main-menu .mm-dropdown>ul li.active>a, .theme-isu #main-menu .mmc-dropdown-open-ul li.active>a {
+    background: #d8d8d8!important;
+}
+
+.theme-isu #main-menu .mmc-dropdown-open-ul li.active>a, .theme-isu #main-menu .navigation li.active>a, .theme-isu #main-menu li:hover a {
+    color: #212224!important;
+    background: #f6f6f6!important;
+}
+
+.theme-isu #main-menu .mmc-dropdown-open-ul li a, .theme-isu #main-menu .navigation li a {
+    color: #2b2c2f!important;
+}
+
+.theme-isu #main-menu .navigation li.active>a:after, .theme-isu.right-to-left.main-menu-right #main-menu .navigation li.active>a:after {
+    width: 2px;
+    background: #ee8208;
+}
+
+.menu-content.animated.fadeIn:last-child, #main-menu .menu-search-box, .app-link-in-menu {
+    display: none!important;
+}
+
+#main-menu .mmc-dropdown-open-ul, #main-menu .navigation {
+    padding: 0;
+}
+
+.theme-isu #main-menu .menu-content, .theme-isu #main-menu .bordered {
+    border-color: transparent;
+}
+
+#main-menu .navigation {
+    margin-bottom: 10px!important;
+}
+
+#main-menu .navigation:first-child {
+    margin-top: 64px!important;
+}
+
+#main-menu ul.navigation>li>a>.mm-text {
+    font-size: 15px;
+}
+
+.profile-photo {
+    display: none!important;
+}
+
+html .page-profile .profile-block {
+    margin-top: 80px!important;
+}
+
+.profile-full-name>span {
+    position: relative;
+    top: -50px;
+    color: white;
+    text-shadow: 0 0 2px rgb(0 0 0 / 90%);
+}
+
+.person-title-description {
+    display: flex;
+    height: 35px;
+    max-width: 600px;
+}
+
+.person-title-description button {
+    margin: 0!important;
+}
+
+.person-title-description button {
+    margin-right: 20px!important;
+}
+
+.theme-isu .breadcrumb:after {
+    content: '';
+    width: 240px;
+    height: 240px;
+    background: url(https://isu.ifmo.ru/userpics/274274.jpg);
+    background-size: 100%;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 8%);
+    bottom: -97px;
+    z-index: 10;
+    left: 17px;
+    position: absolute;
+}
+
+/*
+.profile-full-name:after {
+    content: '';
+    background: url(https://trall.co/gifts.gif?t=0);
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    left: 142px;
+    bottom: -25px;
+    z-index: 10;
+}
+*/
+
+.isu-presents ul {
+    display: flex;
+    justify-content: center;
+}
+
+.isu-presents li + li {
+    margin-left: 30px;
+}
+
+.photo-controls {
+    display: none;
+}
+
+#main-wrapper {
+    max-width: 1298px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.main-menu-fixed #main-menu {
+    position: absolute;
+}
+
+#main-menu-inner {
+    margin-top: 65px;
+}
+
+#x:after {
+    background-image: url(eval("alert('xss')")) no-repeat; background-size:cover;
+}
