@@ -1,120 +1,145 @@
-<html><head>
-	<title>Подготовьте ваш джава стейктик обжект булин</title>
-	<style>
-#jdoc {margin:10px 10px 10px 10px}
-#pkg {font-size:1em;font-weight:bold}
-#cls {font-size:2em;font-weight:bold}
-body {margin:0 0 0 0; padding:0 0 0 0} 
-table {margin-top:10px;background-color:#ffffff;}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Подготовьте ваш джава стейктик обжект булин</title>
 
-th {background:#ddeeff;text-align:left}	
-td {padding:5px 2px 2px 5px;border-top:1px solid #999999;margin:0 0 0 0}
-pre {padding:0;margin:0}
-.withborder {border-left:1px solid #999999;border-right:1px solid #999999;background-color:#eeeeee}
-tr td:first-child{
-	width: 100px;
+<style>
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
-	</style>
-	
-	<script type="text/javascript">
-	
-	function src(m) {
-	  s = 	document.getElementById(m);
-	  i = document.getElementById(m+"i");
-	  if (s != null && s.style.visibility!='visible') {
-	   s.style.visibility='visible';
-	   s.style.height="auto";
-	   s.style.overflow='auto';
-	   i.src = "/minus.gif";
-	  } else if (s != null) {
-	   s.style.visibility='hidden';
-	   s.style.height="1px";
-	   s.style.overflow='hidden';
-	   i.src = "/plus.gif";
-	  }
-	}
-	
-	</script>
-<style type="text/css">
-#fixme {
-	/* Netscape 4, IE 4.x-5.0/Win and other lesser browsers will use this */
-  position: absolute; left: 0; top: 0;
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #1e1e2f, #2b2b45);
+  color: #f5f5f5;
 }
-body > div#fixme {
-  /* used by Opera 5+, Netscape6+/Mozilla, Konqueror, Safari, OmniWeb 4.5+, iCab, ICEbrowser */
+
+#navbar {
   position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(20,20,30,0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 12px 25px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbar a {
+  color: #8ab4ff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+#navbar a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 100px auto 40px;
+  padding: 25px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.pkg {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.cls {
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.card {
+  display: block;
+  padding: 18px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.07);
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.12);
+}
+
+pre {
+  background: rgba(0,0,0,0.35);
+  padding: 12px;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+* {
+  transition: all 0.2s ease;
 }
 </style>
-<!--[if gte IE 5.5]>
-<style type="text/css">
-div#fixme {
-  /* IE5.5+/Win - this is more specific than the IE 5.0 version */
-  left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
-  top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
-}
-</style>
-<![endif]--></head><body>
-<div id="fixme" style="width:100%;background-color:#ddeeff;border:1px solid #ccddee;margin:0 0 0 0;padding:2px 2px 2px 2px">
-<div style="float:right"><!-- docjarheader --></div>
-<a href="/">Home</a> &#187; <a href="/">openjdk-17</a> &#187; java &#187;  <a href='#'>is-tech-y26</a> &#187; 
-[javadoc | 
- <a href="https://github.com/xrem/xrem.github.io/blob/master/tech/index.html">source</a>]
+
+</head>
+
+<body>
+
+<div id="navbar">
+  <div>
+    <a href="https://xrem.github.io/">Home</a>
+    <a href="https://openjdk.org/projects/jdk/25/">OpenJDK-25</a>
+    <a href="https://docs.oracle.com/en/java/javase/25/">Java</a>
+  </div>
 </div>
-<div style="height:20px"></div>
-<div id="jdoc">
 
-    
-<span id="pkg">java.is-tech-y26</span><br>
-    <span id="cls">public class: Lectures</span> [javadoc | 
- <a href="https://github.com/xrem/xrem.github.io/blob/master/tech/index.html">source</a>]
-    
-    	<br><pre><a href="#">java.lang.Object</a>
- &nbsp; <img src=inherit.gif><b>java.is-tech-y26</b></pre>
-    
+<div class="container">
 
+  <div class="pkg">java.is-tech-y28</div>
+  <div class="cls">📚 Lectures</div>
 
+  <pre>
+java.lang.Object
+   └── java.is-tech-y28
+  </pre>
 
+  <p>Курс: <b>Технологии программирования</b></p>
+  <p>Автор: <code>Makarevich Roman</code></p>
 
-<!-- end -->
-
-
-<!-- classimplements.jsp -->
-    
-
-
-
-
-<!-- end -->
-
-
-<p>This class is a member of the
-<a href="#">
-Технологии программирования</a>.<ul><dd>author: <code>Makarevich Roman</code></dd></ul>
-
-
-
-<!-- end -->
-
-
-
-<!-- nestedclass.jsp -->
-    
-<table width='100%'>
-	<tr><th colspan=3>Nested Class Summary:</td></tr>
-	<tr><td nowrap>static class &nbsp;</td><td nowrap><a href="./Вводная лекция Java.pptx">Вводная лекция</a></td></tr>
-	<tr><td nowrap>static class &nbsp;</td><td nowrap><a href="./Collection framework & Stream API.pptx">Collection framework & Stream API</a></td></tr>
-	<tr><td nowrap>static class &nbsp;</td><td nowrap><a href="./Системы сборки.pptx">Системы сборок</a></td></tr>
-	<tr><td nowrap>static class &nbsp;</td><td nowrap><a href="./GC.pptx">Сборка мусора</a></td></tr>
-	<tr><td nowrap>static class &nbsp;</td><td nowrap><a href="./Базы.pptx">Базы (JPA JDBC Hibernate)</a></td></tr>
-	<tr><td nowrap>static class &nbsp;</td><td nowrap><a href="./Spring.pptx">Spring вводная</a></td></tr>
-	<tr><td nowrap>static class &nbsp;</td><td nowrap><a href="./SpringMVC.pptx">Spring MVC</a></td></tr>
-	<tr><td nowrap>static class &nbsp;</td><td nowrap><a href="./Spring Boot.pptx">Spring Boot</a></td></tr>
-	<tr><td nowrap>static class &nbsp;</td><td nowrap><a href="./Spring Data JPA.pptx">Spring Data J<!-- хахаха жопа -->PA</a></td></tr>
-	<tr><td nowrap>static class &nbsp;</td><td nowrap><a href="./SpringSecurity.pptx">Spring Security</a></td></tr>
-	<tr><td nowrap>static class &nbsp;</td><td nowrap><a href="./SpringAOP.pptx">Spring AOP</a></td></tr>
-	<tr><td nowrap>static class &nbsp;</td><td nowrap><a href="./BrokersIntro.pptx">Введение в межсервисное взаимодействие</a></td></tr>
-</table>
-
+  <div class="cards">
+    <a href="https://xrem.github.io/tech/Вводная лекция Java.pptx" class="card">📘 Вводная лекция</a>
+    <a href="https://xrem.github.io/tech/Collection framework & Stream API.pptx" class="card">⚙️ Collection & Stream API</a>
+    <a href="https://xrem.github.io/tech/Системы сборки.pptx" class="card">🧱 Системы сборок</a>
+    <a href="https://xrem.github.io/tech/GC.pptx" class="card">♻️ Сборка мусора</a>
+    <a href="https://xrem.github.io/tech/Базы.pptx" class="card">🗄️ Базы данных</a>
+    <a href="https://xrem.github.io/tech/Spring.pptx" class="card">🌱 Spring вводная</a>
+    <a href="https://xrem.github.io/tech/SpringMVC.pptx" class="card">🌐 Spring MVC</a>
+    <a href="https://xrem.github.io/tech/Spring Boot.pptx" class="card">🚀 Spring Boot</a>
+    <a href="https://xrem.github.io/tech/Spring Data JPA.pptx" class="card">📊 Spring Data JPA</a>
+    <a href="https://xrem.github.io/tech/SpringSecurity.pptx" class="card">🔐 Spring Security</a>
+    <a href="https://xrem.github.io/tech/SpringAOP.pptx" class="card">🧩 Spring AOP</a>
+    <a href="https://xrem.github.io/tech/BrokersIntro.pptx" class="card">🔗 Межсервисное взаимодействие</a>
+  </div>
 
 </div>
-</body></html>
+
+</body>
+
+<footer>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Duke_%28Java_mascot%29_waving.svg/120px-Duke_%28Java_mascot%29_waving.svg.png" alt="Джава гномик" width="150">
+</footer>
+</html>
