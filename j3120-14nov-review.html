@@ -1,0 +1,1817 @@
+<title>J3120 · lab5+lab6: индивидуальные задания и пары</title>
+<style>
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Golos Text Regular'), local('GolosText-Regular'), local('Golos Text'), url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx58hK5SAMqbpw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Golos Text Regular'), local('GolosText-Regular'), local('Golos Text'), url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hK5SAMqbpw.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Golos Text Regular'), local('GolosText-Regular'), local('Golos Text'), url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx18hK5SAMqbpw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Golos Text Regular'), local('GolosText-Regular'), local('Golos Text'), url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hK5SAMo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Golos Text Medium'), local('GolosText-Medium'), url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx58hK5SAMqbpw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Golos Text Medium'), local('GolosText-Medium'), url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hK5SAMqbpw.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Golos Text Medium'), local('GolosText-Medium'), url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx18hK5SAMqbpw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Golos Text Medium'), local('GolosText-Medium'), url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hK5SAMo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Golos Text SemiBold'), local('GolosText-SemiBold'), url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx58hK5SAMqbpw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Golos Text SemiBold'), local('GolosText-SemiBold'), url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hK5SAMqbpw.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Golos Text SemiBold'), local('GolosText-SemiBold'), url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx18hK5SAMqbpw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Golos Text SemiBold'), local('GolosText-SemiBold'), url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hK5SAMo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Golos Text Bold'), local('GolosText-Bold'), url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx58hK5SAMqbpw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Golos Text Bold'), local('GolosText-Bold'), url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hK5SAMqbpw.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Golos Text Bold'), local('GolosText-Bold'), url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx18hK5SAMqbpw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Golos Text Bold'), local('GolosText-Bold'), url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hK5SAMo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+<style>
+:root{
+  --paper:#faf7f2; --ink:#20211f; --ink-dim:#565650; --line:#e2dbcd; --card:#ffffff;
+  --sidebar-bg:#f2ede2; --accent:#7a3b2e; --accent-soft:#f1e2da;
+  --ok-bg:#e4f0e1; --ok-fg:#2f5c2a; --fail-bg:#fbe9d7; --fail-fg:#8a5210;
+  --crit-bg:#fbe0de; --crit-fg:#9c2b23; --code-bg:#2b2a28; --code-fg:#eae5da;
+  --overlay:rgba(20,18,14,.45); color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:#171613; --ink:#ece6db; --ink-dim:#a89e8c; --line:#3a362e; --card:#201f1b;
+    --sidebar-bg:#1c1a16; --accent:#e0967e; --accent-soft:#332521;
+    --ok-bg:#1f2e1c; --ok-fg:#8fce85; --fail-bg:#332510; --fail-fg:#e3a765;
+    --crit-bg:#3a1917; --crit-fg:#ec8b83; --code-bg:#100f0d; --code-fg:#eae5da;
+    --overlay:rgba(0,0,0,.6); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:#171613; --ink:#ece6db; --ink-dim:#a89e8c; --line:#3a362e; --card:#201f1b;
+  --sidebar-bg:#1c1a16; --accent:#e0967e; --accent-soft:#332521;
+  --ok-bg:#1f2e1c; --ok-fg:#8fce85; --fail-bg:#332510; --fail-fg:#e3a765;
+  --crit-bg:#3a1917; --crit-fg:#ec8b83; --code-bg:#100f0d; --code-fg:#eae5da;
+  --overlay:rgba(0,0,0,.6); color-scheme: dark;
+}
+*{box-sizing:border-box} html,body{height:100%}
+body{background:var(--paper); color:var(--ink); margin:0; font-family:"Golos Text",sans-serif; font-size:16px; line-height:1.55;}
+.layout{display:flex; align-items:flex-start; min-height:100%;}
+.sidebar{width:272px; flex:0 0 272px; position:sticky; top:0; height:100vh; background:var(--sidebar-bg); border-right:1px solid var(--line); display:flex; flex-direction:column; padding:18px 0 0;}
+.sidebar-head{padding:0 18px 14px; border-bottom:1px solid var(--line); display:flex; flex-direction:column; gap:10px;}
+.sidebar-title{font-family:"Golos Text",sans-serif; font-size:16px; font-weight:600; margin:0;}
+.sidebar-sub{font-size:12px; color:var(--ink-dim); font-family:"Golos Text",sans-serif;}
+.table-btn{display:flex; align-items:center; justify-content:center; gap:7px; font:inherit; font-size:13px; font-weight:600; font-family:"Golos Text",sans-serif; background:var(--accent); color:var(--paper); border:none; border-radius:8px; padding:9px 12px; cursor:pointer;}
+.table-btn:hover{opacity:.9}
+.table-btn-alt{background:transparent; color:var(--ink); border:1px solid var(--line);}
+.table-btn-alt:hover{background:var(--card); opacity:1;}
+.nav-list{overflow-y:auto; flex:1; padding:10px 10px 24px;}
+.nav-item{display:flex; flex-direction:column; gap:5px; padding:9px 10px; border-radius:9px; margin-bottom:2px; text-decoration:none; color:var(--ink); border:1px solid transparent;}
+.nav-item:hover{background:var(--card);}
+.nav-item.active{background:var(--card); border-color:var(--line); box-shadow:0 1px 0 var(--line);}
+.nav-item.active .nav-name{color:var(--accent);}
+.nav-name{font-size:13.5px; font-weight:600; line-height:1.3;}
+.nav-meta{display:flex; align-items:center; gap:8px;}
+.nav-flake{font-family:"Golos Text",sans-serif; font-size:11px; color:var(--ink-dim);}
+.nav-item-disabled{opacity:.55; cursor:default;}
+.nav-item-tz .nav-name{font-size:13.5px;}
+.nav-sep{height:1px; background:var(--line); margin:8px 6px 10px;}
+.sidebar-toggle{display:none; position:fixed; bottom:20px; right:20px; z-index:40; width:52px; height:52px; border-radius:100px; background:var(--accent); color:var(--paper); border:none; font-size:20px; align-items:center; justify-content:center; box-shadow:0 6px 18px rgba(0,0,0,.25); cursor:pointer;}
+.sidebar-scrim{display:none; position:fixed; inset:0; background:var(--overlay); z-index:30;}
+.content{flex:1; min-width:0;}
+.wrap{max-width:760px; margin:0 auto; padding:0 24px 120px;}
+header.hero{padding:48px 0 30px; border-bottom:1px solid var(--line); margin-bottom:32px;}
+.eyebrow{font-family:"Golos Text",sans-serif; font-size:12.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin:0 0 14px;}
+h1{font-family:"Golos Text",sans-serif; font-weight:700; font-size:clamp(28px,4.5vw,40px); line-height:1.08; margin:0 0 16px; text-wrap:balance;}
+.lede{color:var(--ink-dim); font-size:16.5px; max-width:60ch; margin:0 0 20px;}
+.stat-row{display:flex; flex-wrap:wrap; gap:10px 28px; margin-top:22px;}
+.stat{display:flex; flex-direction:column; gap:2px;}
+.stat b{font-family:"Golos Text",sans-serif; font-size:25px; font-weight:600;}
+.stat span{font-size:12px; color:var(--ink-dim); text-transform:uppercase; letter-spacing:.04em;}
+h2.section-title{font-family:"Golos Text",sans-serif; font-size:21px; font-weight:600; margin:48px 0 16px; padding-bottom:10px; border-bottom:1px solid var(--line);}
+.badge{display:inline-block; padding:3px 9px; border-radius:100px; font-family:"Golos Text",sans-serif; font-size:11.5px; font-weight:500; white-space:nowrap;}
+.badge-sm{font-size:10px; padding:2px 7px;}
+.badge-ok{background:var(--ok-bg); color:var(--ok-fg);}
+.badge-fail{background:var(--fail-bg); color:var(--fail-fg);}
+.badge-crit{background:var(--crit-bg); color:var(--crit-fg);}
+.tz-card{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:26px 28px 30px; margin:0 0 20px; scroll-margin-top:20px;}
+.tz-legend{background:var(--accent-soft); border-left:3px solid var(--accent); border-radius:0 8px 8px 0; padding:12px 16px; margin:0 0 20px; font-size:14.5px; color:var(--ink);}
+.tz-card h3{font-family:"Golos Text",sans-serif; font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--accent); margin:22px 0 10px;}
+.tz-card h3:first-of-type{margin-top:0}
+.tz-card ul, .tz-card ol{padding-left:22px; margin:0 0 14px;}
+.tz-card li{margin-bottom:8px; font-size:14.5px;}
+.tz-card p{font-size:14.5px; margin:0 0 12px;}
+.tz-card code{font-family:"Golos Text",sans-serif; font-size:.86em; background:var(--accent-soft); padding:.12em .4em; border-radius:5px;}
+table.tz-table{width:100%; border-collapse:collapse; font-size:14px; margin:0 0 16px;}
+table.tz-table th{text-align:left; font-family:"Golos Text",sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-dim); padding:7px 10px; border-bottom:1px solid var(--line);}
+table.tz-table td{padding:8px 10px; border-bottom:1px solid var(--line);}
+.student{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:26px 28px 32px; margin:20px 0; scroll-margin-top:20px;}
+.student-head{display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:10px 16px; border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:20px;}
+.student-head h2{font-family:"Golos Text",sans-serif; font-size:23px; font-weight:600; margin:0;}
+.student-meta{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+.gh-link{font-family:"Golos Text",sans-serif; font-size:13px; color:var(--ink-dim); text-decoration:none; border-bottom:1px dashed var(--line);}
+.gh-link:hover{color:var(--accent); border-color:var(--accent);}
+.flake-count{font-family:"Golos Text",sans-serif; font-size:12.5px; color:var(--ink-dim); border-bottom:1px dotted var(--ink-dim); cursor:help;}
+.flake-count:hover, .flake-count:focus{color:var(--accent); border-color:var(--accent); outline:none;}
+.flake-tip{position:fixed; z-index:80; display:none; max-width:min(420px, calc(100vw - 32px)); background:var(--code-bg); color:var(--code-fg); border-radius:10px; padding:12px 14px; font-family:"Golos Text",sans-serif; font-size:12px; line-height:1.6; box-shadow:0 10px 30px rgba(0,0,0,.35);}
+.flake-tip.show{display:block;}
+.flake-tip ul{margin:0; padding-left:16px;}
+.flake-tip li{margin-bottom:4px; word-break:break-word;}
+.flake-tip li:last-child{margin-bottom:0;}
+.student-body h3{font-family:"Golos Text",sans-serif; font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--accent); margin:26px 0 10px;}
+.student-body h3:first-child{margin-top:0}
+.student-body p{margin:0 0 12px; color:var(--ink);}
+.student-body ul, .student-body ol{padding-left:22px; margin:0 0 14px;}
+.student-body li{margin-bottom:10px;}
+.student-body strong{font-weight:700;}
+.student-body blockquote{margin:0 0 12px; padding:2px 16px; border-left:3px solid var(--accent); color:var(--ink-dim); font-size:14.5px;}
+.student-body code{font-family:"Golos Text",sans-serif; font-size:.86em; background:var(--accent-soft); padding:.12em .4em; border-radius:5px;}
+.student-body pre{background:var(--code-bg); color:var(--code-fg); border-radius:10px; padding:16px 18px; overflow-x:auto; margin:0 0 16px; font-size:13.2px; line-height:1.55;}
+.student-body pre code{background:none; padding:0; color:inherit; font-size:1em;}
+footer{margin-top:56px; padding-top:24px; border-top:1px solid var(--line); color:var(--ink-dim); font-size:13px;}
+.modal-backdrop{position:fixed; inset:0; background:var(--overlay); z-index:60; display:flex; align-items:flex-start; justify-content:center; padding:5vh 16px; overflow-y:auto;}
+.modal-backdrop[hidden]{display:none;}
+.modal{background:var(--card); border:1px solid var(--line); border-radius:14px; width:100%; max-width:920px; padding:22px 22px 26px; box-shadow:0 20px 60px rgba(0,0,0,.35);}
+.modal-head{display:flex; align-items:center; justify-content:space-between; margin-bottom:14px;}
+.modal-head h2{font-family:"Golos Text",sans-serif; font-size:19px; margin:0;}
+.modal-close{background:none; border:none; font-size:22px; line-height:1; color:var(--ink-dim); cursor:pointer; padding:4px 8px; border-radius:8px;}
+.modal-close:hover{background:var(--accent-soft); color:var(--accent);}
+.modal-scroll{overflow-x:auto;}
+table.summary{width:100%; border-collapse:collapse; font-size:14px;}
+table.summary th{text-align:left; font-family:"Golos Text",sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-dim); padding:8px 10px; border-bottom:1px solid var(--line); white-space:nowrap;}
+table.summary td{padding:9px 10px; border-bottom:1px solid var(--line); vertical-align:top;}
+table.summary td.num{font-family:"Golos Text",sans-serif; text-align:right;}
+table.summary td.note{color:var(--ink-dim); min-width:260px;}
+table.summary tr.not-submitted{opacity:.75}
+table.summary a{color:var(--ink); text-decoration:none; font-weight:600;}
+table.summary a:hover{color:var(--accent)}
+.tasks-hint{font-size:13.5px; color:var(--ink-dim); margin:0 0 12px;}
+.tasks-search{width:100%; font-family:"Golos Text",sans-serif; font-size:14px; padding:10px 14px; border-radius:10px; border:1px solid var(--line); background:var(--paper); color:var(--ink); margin-bottom:10px;}
+.tasks-bulk{display:flex; gap:14px; margin-bottom:8px;}
+.link-btn{background:none; border:none; padding:0; cursor:pointer; font-family:"Golos Text",sans-serif; font-size:12.5px; font-weight:600; color:var(--accent); text-decoration:underline; text-underline-offset:2px;}
+.link-btn:hover{opacity:.8}
+.tasks-list{max-height:260px; overflow-y:auto; border:1px solid var(--line); border-radius:10px; margin-bottom:14px; background:var(--paper);}
+.tasks-item{display:flex; align-items:center; gap:10px; padding:9px 14px; border-bottom:1px solid var(--line); cursor:pointer;}
+.tasks-item:last-child{border-bottom:none;}
+.tasks-item:hover{background:var(--accent-soft);}
+.tasks-item input{flex:0 0 auto; width:16px; height:16px; accent-color:var(--accent); cursor:pointer;}
+.tasks-item .ti-name{font-size:13.5px; font-weight:600;}
+.tasks-item .ti-user{font-family:"Golos Text",sans-serif; font-size:12px; color:var(--ink-dim); margin-left:auto;}
+.tasks-item[hidden]{display:none;}
+.tasks-empty{padding:14px; font-size:13.5px; color:var(--ink-dim); text-align:center;}
+.tasks-actions{display:flex; align-items:center; gap:14px; margin-bottom:16px;}
+.tasks-count{font-size:13px; color:var(--ink-dim); font-family:"Golos Text",sans-serif;}
+.table-btn[disabled]{opacity:.45; cursor:not-allowed;}
+.tasks-output-wrap{position:relative;}
+.tasks-output{white-space:pre-wrap; word-break:break-word; font-family:"Golos Text",sans-serif; font-size:13px; line-height:1.6; background:var(--code-bg); color:var(--code-fg); border-radius:10px; padding:16px 18px; min-height:60px;}
+.tasks-output:empty::before{content:"Здесь появится результат"; color:var(--ink-dim); opacity:.6;}
+.copy-btn{position:absolute; top:10px; right:10px; font-size:12px; font-family:"Golos Text",sans-serif; font-weight:600; background:var(--accent-soft); color:var(--accent); border:none; border-radius:7px; padding:6px 10px; cursor:pointer;}
+.copy-btn:hover{opacity:.85}
+@media (max-width:880px){
+  .sidebar{position:fixed; top:0; left:0; z-index:50; transform:translateX(-100%); transition:transform .22s ease; box-shadow:4px 0 24px rgba(0,0,0,.2);}
+  .sidebar.open{transform:translateX(0);}
+  .sidebar-toggle{display:flex;}
+  body.nav-open .sidebar-scrim{display:block;}
+  .student{padding:20px 18px 26px;}
+  .wrap{padding:0 18px 100px;}
+}
+</style>
+
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-head">
+      <p class="sidebar-title">Навигация по студентам</p>
+      <p class="sidebar-sub">aie-python-26 · J3120 · lab5+lab6</p>
+      <button class="table-btn" id="openTableBtn" type="button">▤ Сводная таблица</button>
+    </div>
+    <nav class="nav-list" id="navList">
+      <a class="nav-item nav-item-tz" href="#tz" data-target="tz"><span class="nav-name">📋 Техническое задание</span></a>
+      <div class="nav-sep"></div>
+      <a class="nav-item" href="#s-ulitocha" data-target="s-ulitocha"><span class="nav-name">Ульяна Антонова</span><span class="nav-meta"><span class="badge badge-ok badge-sm">сдано</span><span class="nav-flake">flake8: 0</span></span></a>
+<a class="nav-item" href="#s-astrahantsevsavely" data-target="s-astrahantsevsavely"><span class="nav-name">Савелий Астраханцев</span><span class="nav-meta"><span class="badge badge-ok badge-sm">сдано</span><span class="nav-flake">flake8: 0</span></span></a>
+<a class="nav-item" href="#s-nukemen135" data-target="s-nukemen135"><span class="nav-name">Никита Богданов</span><span class="nav-meta"><span class="badge badge-fail badge-sm">сдано частично</span><span class="nav-flake">flake8: 0</span></span></a>
+<a class="nav-item" href="#s-lag-028" data-target="s-lag-028"><span class="nav-name">Леонид Горбачев</span><span class="nav-meta"><span class="badge badge-ok badge-sm">сдано</span><span class="nav-flake">flake8: 0</span></span></a>
+<a class="nav-item" href="#s-metze322" data-target="s-metze322"><span class="nav-name">Эмиль Ибраев</span><span class="nav-meta"><span class="badge badge-ok badge-sm">сдано</span><span class="nav-flake">flake8: 0</span></span></a>
+<a class="nav-item" href="#s-ogre-mager" data-target="s-ogre-mager"><span class="nav-name">Григорий Каган</span><span class="nav-meta"><span class="badge badge-ok badge-sm">сдано</span><span class="nav-flake">flake8: 0</span></span></a>
+<a class="nav-item" href="#s-olesyafrogi" data-target="s-olesyafrogi"><span class="nav-name">Олеся Колищук</span><span class="nav-meta"><span class="badge badge-fail badge-sm">сдано частично</span><span class="nav-flake">flake8: 0</span></span></a>
+<a class="nav-item" href="#s-quelsorr" data-target="s-quelsorr"><span class="nav-name">Полина Кондрашева</span><span class="nav-meta"><span class="badge badge-ok badge-sm">сдано</span><span class="nav-flake">flake8: 0</span></span></a>
+<a class="nav-item" href="#s-entepp" data-target="s-entepp"><span class="nav-name">Амирхазрат Нарзиев</span><span class="nav-meta"><span class="badge badge-fail badge-sm">сдано частично</span><span class="nav-flake">flake8: 0</span></span></a>
+<a class="nav-item" href="#s-varyxx23" data-target="s-varyxx23"><span class="nav-name">Варвара Овтина</span><span class="nav-meta"><span class="badge badge-ok badge-sm">сдано</span><span class="nav-flake">flake8: 0</span></span></a>
+<a class="nav-item" href="#s-sixsinscrim" data-target="s-sixsinscrim"><span class="nav-name">Артур Ослин</span><span class="nav-meta"><span class="badge badge-crit badge-sm">не сдано</span><span class="nav-flake">flake8: 0</span></span></a>
+<a class="nav-item" href="#s-d3th0r4" data-target="s-d3th0r4"><span class="nav-name">Полина Пашкова</span><span class="nav-meta"><span class="badge badge-fail badge-sm">сдано частично</span><span class="nav-flake">flake8: 0</span></span></a>
+<a class="nav-item" href="#s-lshhsh00" data-target="s-lshhsh00"><span class="nav-name">Лилиана Ризванова</span><span class="nav-meta"><span class="badge badge-ok badge-sm">сдано</span><span class="nav-flake">flake8: 0</span></span></a>
+<a class="nav-item" href="#s-sablingeorge" data-target="s-sablingeorge"><span class="nav-name">Георгий Саблин</span><span class="nav-meta"><span class="badge badge-ok badge-sm">сдано</span><span class="nav-flake">flake8: 0</span></span></a>
+<a class="nav-item" href="#s-egor137-yaj" data-target="s-egor137-yaj"><span class="nav-name">Егор Сидельников</span><span class="nav-meta"><span class="badge badge-fail badge-sm">сдано частично</span><span class="nav-flake">flake8: 0</span></span></a>
+<a class="nav-item" href="#s-wolf-of-mh-st" data-target="s-wolf-of-mh-st"><span class="nav-name">Саид Султанов</span><span class="nav-meta"><span class="badge badge-fail badge-sm">сдано частично</span><span class="nav-flake">flake8: 0</span></span></a>
+<a class="nav-item" href="#s-nitospb" data-target="s-nitospb"><span class="nav-name">Никита Толочко</span><span class="nav-meta"><span class="badge badge-crit badge-sm">не сдано</span><span class="nav-flake">flake8: 0</span></span></a>
+<a class="nav-item" href="#s-mrw0wa" data-target="s-mrw0wa"><span class="nav-name">Владимир Хмелевский</span><span class="nav-meta"><span class="badge badge-ok badge-sm">сдано</span><span class="nav-flake">flake8: 0</span></span></a>
+<a class="nav-item" href="#s-burmaldy" data-target="s-burmaldy"><span class="nav-name">Евгения Чиргина</span><span class="nav-meta"><span class="badge badge-fail badge-sm">сдано частично</span><span class="nav-flake">flake8: 0</span></span></a>
+<a class="nav-item" href="#s-johnnyshish" data-target="s-johnnyshish"><span class="nav-name">Евгений Шишпаренок</span><span class="nav-meta"><span class="badge badge-fail badge-sm">сдано частично</span><span class="nav-flake">flake8: 0</span></span></a>
+<a class="nav-item nav-item-disabled" href="javascript:void(0)"><span class="nav-name">Ярослав Соболев</span><span class="nav-meta"><span class="badge badge-crit badge-sm">не сдано</span></span></a>
+<a class="nav-item nav-item-disabled" href="javascript:void(0)"><span class="nav-name">Ярослав Соболев</span><span class="nav-meta"><span class="badge badge-crit badge-sm">не сдано</span></span></a>
+<a class="nav-item nav-item-disabled" href="javascript:void(0)"><span class="nav-name">Матвей Соловьев</span><span class="nav-meta"><span class="badge badge-crit badge-sm">не сдано</span></span></a>
+<a class="nav-item nav-item-disabled" href="javascript:void(0)"><span class="nav-name">Александр Сальников</span><span class="nav-meta"><span class="badge badge-crit badge-sm">не сдано</span></span></a>
+<a class="nav-item nav-item-disabled" href="javascript:void(0)"><span class="nav-name">Максим Шмерлинг</span><span class="nav-meta"><span class="badge badge-crit badge-sm">не сдано</span></span></a>
+<a class="nav-item nav-item-disabled" href="javascript:void(0)"><span class="nav-name">Тимур Хабибуллин</span><span class="nav-meta"><span class="badge badge-crit badge-sm">не сдано</span></span></a>
+    </nav>
+  </aside>
+
+  <div class="sidebar-scrim" id="sidebarScrim"></div>
+  <button class="sidebar-toggle" id="sidebarToggle" type="button" aria-label="Открыть навигацию">☰</button>
+
+  <div class="content">
+    <div class="wrap">
+      <header class="hero">
+        <p class="eyebrow">aie-python-26 · J3120 · lab5+lab6</p>
+        <h1>J3120 · lab5+lab6: индивидуальные задания и пары</h1>
+        <p class="lede">Состояние на 14.11: индивидуальные задания — сданы все выданные у 10 человек, частично у 8, не сданы у 2. Работа в парах зафиксирована во всех парах, кроме lab5-пары Колищук ↔ Султанов (активность в одну сторону). Признаки ИИ-генерации не обнаружены в 15 сдачах, отдельные слабые сигналы — в 5.</p>
+        <div class="stat-row">
+          <div class="stat"><b>20</b><span>студентов получали задания</span></div>
+<div class="stat"><b>10</b><span>сдали все выданные задания</span></div>
+<div class="stat"><b>8</b><span>сдали частично</span></div>
+<div class="stat"><b>2</b><span>не сдали ни одного</span></div>
+        </div>
+      </header>
+
+      <section class="tz-card" id="tz">
+        <h2 class="section-title" style="margin-top:0">Техническое задание</h2>
+        <p class="tz-legend"><strong>Легенда.</strong> Индивидуальные задания: сдано / сдано частично / не сдано. Работа в парах: выполнена / не выполнена. ИИ-экспертиза: обнаружены признаки или нет.</p>
+        <h2>Механика</h2>
+<p>По реакциям на issue <a href="https://github.com/aie-python-26/practice/issues/128">practice#128</a> (lab5, пары 31.10) и <a href="https://github.com/aie-python-26/practice/issues/149">practice#149</a> (lab6, пары 07.11) распределялись пары и выдавались индивидуальные задания (по два на каждой лабе).</p>
+<p>Проверка 14.11: наличие решений индивидуальных заданий в репозиториях и их запуск на примерах из текста задания; активность в парах (review-комментарии и тесты на Feedback-PR напарника); ИИ-экспертиза кода.</p>
+<h2>Пары</h2>
+<table>
+<thead>
+<tr>
+<th>Лаба</th>
+<th>Пара</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lab5</td>
+<td>Чиргина ↔ Горбачев</td>
+<td>выполнена</td>
+</tr>
+<tr>
+<td>lab5</td>
+<td>Богданов ↔ Ослин</td>
+<td>выполнена</td>
+</tr>
+<tr>
+<td>lab5</td>
+<td>Колищук ↔ Султанов</td>
+<td>выполнена частично (в одну сторону)</td>
+</tr>
+<tr>
+<td>lab5</td>
+<td>Пашкова ↔ Ибраев</td>
+<td>выполнена</td>
+</tr>
+<tr>
+<td>lab5</td>
+<td>Астраханцев ↔ Каган</td>
+<td>выполнена</td>
+</tr>
+<tr>
+<td>lab5</td>
+<td>Антонова ↔ Сидельников</td>
+<td>выполнена</td>
+</tr>
+<tr>
+<td>lab5</td>
+<td>Саблин</td>
+<td>лайв-кодер, пара не назначалась</td>
+</tr>
+<tr>
+<td>lab6</td>
+<td>Овтина ↔ Кондрашева</td>
+<td>выполнена</td>
+</tr>
+<tr>
+<td>lab6</td>
+<td>Пашкова ↔ Султанов</td>
+<td>выполнена</td>
+</tr>
+<tr>
+<td>lab6</td>
+<td>Сидельников ↔ Ибраев</td>
+<td>выполнена</td>
+</tr>
+<tr>
+<td>lab6</td>
+<td>Саблин ↔ Горбачев</td>
+<td>выполнена</td>
+</tr>
+<tr>
+<td>lab6</td>
+<td>Хмелевский ↔ Чиргина</td>
+<td>выполнена</td>
+</tr>
+<tr>
+<td>lab6</td>
+<td>Антонова ↔ Ризванова</td>
+<td>выполнена</td>
+</tr>
+<tr>
+<td>lab6</td>
+<td>Колищук ↔ Толочко</td>
+<td>выполнена</td>
+</tr>
+<tr>
+<td>lab6</td>
+<td>Астраханцев ↔ Богданов</td>
+<td>выполнена</td>
+</tr>
+</tbody>
+</table>
+<h2>Индивидуальные задания — сводка</h2>
+<ul>
+<li>Сданы все выданные: Антонова, Астраханцев, Горбачев, Ибраев, Каган, Кондрашева, Овтина, Ризванова, Саблин, Хмелевский.</li>
+<li>Сданы частично: Богданов, Колищук, Нарзиев, Пашкова, Сидельников, Султанов, Чиргина, Шишпаренок.</li>
+<li>Не сданы: Ослин (0/2), Толочко (0/4).</li>
+</ul>
+<h2>ИИ-экспертиза — сводка</h2>
+<p>Признаки ИИ-генерации не обнаружены: 15 сдач. Обнаружены отдельные слабые сигналы: 5 (Колищук, Овтина, Ризванова, Саблин, Шишпаренок). Вердиктов «есть совокупность признаков» и «сильные признаки» нет.</p>
+      </section>
+
+      <h2 class="section-title">Разбор по студентам</h2>
+      
+<section class="student" id="s-ulitocha">
+  <div class="student-head">
+    <h2>Ульяна Антонова</h2>
+    <div class="student-meta">
+      <a class="gh-link" href="https://github.com/ulitocha" target="_blank" rel="noopener">@ulitocha</a>
+      <span class="badge badge-ok">сдано</span>
+      <span class="flake-count" tabindex="0" data-flake8="[&quot;Не проверялось&quot;]">flake8: 0</span>
+    </div>
+  </div>
+  <div class="student-body">
+  <h3>Индивидуальные задания</h3>
+<table>
+<thead>
+<tr>
+<th>Задание</th>
+<th>Статус</th>
+<th>Факт</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lab5, задание 1 (replay)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab5, задание 2 (audit_strict)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 1 (deny_reason)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 2 (final_journal)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Итог: сдано.</strong></p>
+<h3>Работа в парах</h3>
+<ul>
+<li>lab5: пара с Е. Сидельниковым — выполнена (взаимные ревью на PR)</li>
+<li>lab6: пара с Л. Ризвановой — выполнена (взаимные ревью на PR)</li>
+</ul>
+<h3>ИИ-экспертиза</h3>
+<ul>
+<li>Признаки ИИ-генерации: <strong>не обнаружены</strong>.</li>
+</ul>
+  </div>
+</section>
+
+<section class="student" id="s-astrahantsevsavely">
+  <div class="student-head">
+    <h2>Савелий Астраханцев</h2>
+    <div class="student-meta">
+      <a class="gh-link" href="https://github.com/AstrahantsevSavely" target="_blank" rel="noopener">@AstrahantsevSavely</a>
+      <span class="badge badge-ok">сдано</span>
+      <span class="flake-count" tabindex="0" data-flake8="[&quot;Не проверялось&quot;]">flake8: 0</span>
+    </div>
+  </div>
+  <div class="student-body">
+  <h3>Индивидуальные задания</h3>
+<table>
+<thead>
+<tr>
+<th>Задание</th>
+<th>Статус</th>
+<th>Факт</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lab5, задание 1 (find_by_nick)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab5, задание 2 (requires_role)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 1 (slots_left)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 2 (test_locked_beats_limit)</td>
+<td>сдано</td>
+<td>тест найден, проходит</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Итог: сдано.</strong></p>
+<h3>Работа в парах</h3>
+<ul>
+<li>lab5: пара с Г. Каганом — выполнена (взаимные ревью на PR)</li>
+<li>lab6: пара с Н. Богдановым — выполнена (взаимные ревью на PR)</li>
+</ul>
+<h3>ИИ-экспертиза</h3>
+<ul>
+<li>Признаки ИИ-генерации: <strong>не обнаружены</strong>.</li>
+</ul>
+  </div>
+</section>
+
+<section class="student" id="s-nukemen135">
+  <div class="student-head">
+    <h2>Никита Богданов</h2>
+    <div class="student-meta">
+      <a class="gh-link" href="https://github.com/nukemen135" target="_blank" rel="noopener">@nukemen135</a>
+      <span class="badge badge-fail">сдано частично</span>
+      <span class="flake-count" tabindex="0" data-flake8="[&quot;Не проверялось&quot;]">flake8: 0</span>
+    </div>
+  </div>
+  <div class="student-body">
+  <h3>Индивидуальные задания</h3>
+<table>
+<thead>
+<tr>
+<th>Задание</th>
+<th>Статус</th>
+<th>Факт</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lab5, задание 1 (audit)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab5, задание 2 (report)</td>
+<td>сдано частично</td>
+<td>функция найдена; пример из задания расходится: calls=2 вместо ожидаемого 1; письменное объяснение отсутствует</td>
+</tr>
+<tr>
+<td>lab6, задание 1 (why_denied)</td>
+<td>не сдано</td>
+<td>решение не найдено в репозитории и истории коммитов</td>
+</tr>
+<tr>
+<td>lab6, задание 2 (compensation_report)</td>
+<td>не сдано</td>
+<td>решение не найдено</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Итог: сдано частично.</strong></p>
+<h3>Работа в парах</h3>
+<ul>
+<li>lab5: пара с А. Ослиным — выполнена (взаимно: тесты и ревью на PR)</li>
+<li>lab6: пара с С. Астраханцевым — выполнена (взаимные ревью на PR)</li>
+</ul>
+<h3>ИИ-экспертиза</h3>
+<ul>
+<li>Признаки ИИ-генерации: <strong>не обнаружены</strong>.</li>
+</ul>
+  </div>
+</section>
+
+<section class="student" id="s-lag-028">
+  <div class="student-head">
+    <h2>Леонид Горбачев</h2>
+    <div class="student-meta">
+      <a class="gh-link" href="https://github.com/Lag-028" target="_blank" rel="noopener">@Lag-028</a>
+      <span class="badge badge-ok">сдано</span>
+      <span class="flake-count" tabindex="0" data-flake8="[&quot;Не проверялось&quot;]">flake8: 0</span>
+    </div>
+  </div>
+  <div class="student-body">
+  <h3>Индивидуальные задания</h3>
+<table>
+<thead>
+<tr>
+<th>Задание</th>
+<th>Статус</th>
+<th>Факт</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lab5, задание 1 (signature_map)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab5, задание 2 (report)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 1 (turn_in)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 2 (payout)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Итог: сдано.</strong></p>
+<h3>Работа в парах</h3>
+<ul>
+<li>lab5: пара с Е. Чиргиной — выполнена (взаимно: замечание и тесты на PR)</li>
+<li>lab6: пара с Г. Саблиным — выполнена (взаимно: ревью и тесты на PR)</li>
+</ul>
+<h3>ИИ-экспертиза</h3>
+<ul>
+<li>Признаки ИИ-генерации: <strong>не обнаружены</strong>.</li>
+</ul>
+  </div>
+</section>
+
+<section class="student" id="s-metze322">
+  <div class="student-head">
+    <h2>Эмиль Ибраев</h2>
+    <div class="student-meta">
+      <a class="gh-link" href="https://github.com/metze322" target="_blank" rel="noopener">@metze322</a>
+      <span class="badge badge-ok">сдано</span>
+      <span class="flake-count" tabindex="0" data-flake8="[&quot;Не проверялось&quot;]">flake8: 0</span>
+    </div>
+  </div>
+  <div class="student-body">
+  <h3>Индивидуальные задания</h3>
+<table>
+<thead>
+<tr>
+<th>Задание</th>
+<th>Статус</th>
+<th>Факт</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lab5, задание 1 (requires_any)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab5, задание 2 (dispatch_stats)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 1 (trace)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 2 (denial)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Итог: сдано.</strong></p>
+<h3>Работа в парах</h3>
+<ul>
+<li>lab5: пара с П. Пашковой — выполнена (взаимные ревью на PR)</li>
+<li>lab6: пара с Е. Сидельниковым — выполнена (взаимно: тесты на PR)</li>
+</ul>
+<h3>ИИ-экспертиза</h3>
+<ul>
+<li>Признаки ИИ-генерации: <strong>не обнаружены</strong>.</li>
+</ul>
+  </div>
+</section>
+
+<section class="student" id="s-ogre-mager">
+  <div class="student-head">
+    <h2>Григорий Каган</h2>
+    <div class="student-meta">
+      <a class="gh-link" href="https://github.com/Ogre-Mager" target="_blank" rel="noopener">@Ogre-Mager</a>
+      <span class="badge badge-ok">сдано</span>
+      <span class="flake-count" tabindex="0" data-flake8="[&quot;Не проверялось&quot;]">flake8: 0</span>
+    </div>
+  </div>
+  <div class="student-body">
+  <h3>Индивидуальные задания</h3>
+<table>
+<thead>
+<tr>
+<th>Задание</th>
+<th>Статус</th>
+<th>Факт</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lab5, задание 1 (try_bind)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab5, задание 2 (audit_tag)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 1</td>
+<td>не выдавалось</td>
+<td>задания по lab6 не выдавались</td>
+</tr>
+<tr>
+<td>lab6, задание 2</td>
+<td>не выдавалось</td>
+<td>задания по lab6 не выдавались</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Итог: сдано.</strong></p>
+<h3>Работа в парах</h3>
+<ul>
+<li>lab5: пара с С. Астраханцевым — выполнена (взаимные ревью на PR)</li>
+<li>lab6: пара не назначалась</li>
+</ul>
+<h3>ИИ-экспертиза</h3>
+<ul>
+<li>Признаки ИИ-генерации: <strong>не обнаружены</strong>.</li>
+</ul>
+  </div>
+</section>
+
+<section class="student" id="s-olesyafrogi">
+  <div class="student-head">
+    <h2>Олеся Колищук</h2>
+    <div class="student-meta">
+      <a class="gh-link" href="https://github.com/OlesyaFrogi" target="_blank" rel="noopener">@OlesyaFrogi</a>
+      <span class="badge badge-fail">сдано частично</span>
+      <span class="flake-count" tabindex="0" data-flake8="[&quot;Не проверялось&quot;]">flake8: 0</span>
+    </div>
+  </div>
+  <div class="student-body">
+  <h3>Индивидуальные задания</h3>
+<table>
+<thead>
+<tr>
+<th>Задание</th>
+<th>Статус</th>
+<th>Факт</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lab5, задание 1 (dispatch)</td>
+<td>не сдано</td>
+<td>решение не найдено в репозитории и истории коммитов</td>
+</tr>
+<tr>
+<td>lab5, задание 2 (requires_role)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 1 (accept)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 2 (turn_in)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Итог: сдано частично.</strong></p>
+<h3>Работа в парах</h3>
+<ul>
+<li>lab5: пара с С. Султановым — выполнена частично: тесты получены от напарника, встречной активности на его PR не зафиксировано</li>
+<li>lab6: пара с Н. Толочко — выполнена (взаимные ревью на PR)</li>
+</ul>
+<h3>ИИ-экспертиза</h3>
+<ul>
+<li>Признаки ИИ-генерации: <strong>обнаружены отдельные слабые сигналы</strong>.</li>
+</ul>
+  </div>
+</section>
+
+<section class="student" id="s-quelsorr">
+  <div class="student-head">
+    <h2>Полина Кондрашева</h2>
+    <div class="student-meta">
+      <a class="gh-link" href="https://github.com/quelsorr" target="_blank" rel="noopener">@quelsorr</a>
+      <span class="badge badge-ok">сдано</span>
+      <span class="flake-count" tabindex="0" data-flake8="[&quot;Не проверялось&quot;]">flake8: 0</span>
+    </div>
+  </div>
+  <div class="student-body">
+  <h3>Индивидуальные задания</h3>
+<table>
+<thead>
+<tr>
+<th>Задание</th>
+<th>Статус</th>
+<th>Факт</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lab5, задание 1 (can_kick)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab5, задание 2 (get_bound)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 1 (abandon)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры проходят; в репозитории падают 2 теста из-за дублирования имени abandon</td>
+</tr>
+<tr>
+<td>lab6, задание 2 (compensate)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры проходят; то же дублирование имён</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Итог: сдано.</strong></p>
+<h3>Работа в парах</h3>
+<ul>
+<li>lab5: пара не назначалась (задание выдавалось индивидуально)</li>
+<li>lab6: пара с В. Овтиной — выполнена (взаимно: тесты на PR)</li>
+</ul>
+<h3>ИИ-экспертиза</h3>
+<ul>
+<li>Признаки ИИ-генерации: <strong>не обнаружены</strong>.</li>
+</ul>
+  </div>
+</section>
+
+<section class="student" id="s-entepp">
+  <div class="student-head">
+    <h2>Амирхазрат Нарзиев</h2>
+    <div class="student-meta">
+      <a class="gh-link" href="https://github.com/entepp" target="_blank" rel="noopener">@entepp</a>
+      <span class="badge badge-fail">сдано частично</span>
+      <span class="flake-count" tabindex="0" data-flake8="[&quot;Не проверялось&quot;]">flake8: 0</span>
+    </div>
+  </div>
+  <div class="student-body">
+  <h3>Индивидуальные задания</h3>
+<table>
+<thead>
+<tr>
+<th>Задание</th>
+<th>Статус</th>
+<th>Факт</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lab5, задание 1 (dispatch)</td>
+<td>не сдано</td>
+<td>решение не найдено</td>
+</tr>
+<tr>
+<td>lab5, задание 2 (requires_role)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 1</td>
+<td>не выдавалось</td>
+<td>задания по lab6 не выдавались</td>
+</tr>
+<tr>
+<td>lab6, задание 2</td>
+<td>не выдавалось</td>
+<td>задания по lab6 не выдавались</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Итог: сдано частично.</strong></p>
+<h3>Работа в парах</h3>
+<ul>
+<li>lab5: пара не назначалась (задание выдавалось индивидуально)</li>
+<li>lab6: не участвовал (репозиторий lab6 не заполнялся)</li>
+</ul>
+<h3>ИИ-экспертиза</h3>
+<ul>
+<li>Признаки ИИ-генерации: <strong>не обнаружены</strong>.</li>
+</ul>
+  </div>
+</section>
+
+<section class="student" id="s-varyxx23">
+  <div class="student-head">
+    <h2>Варвара Овтина</h2>
+    <div class="student-meta">
+      <a class="gh-link" href="https://github.com/varyxx23" target="_blank" rel="noopener">@varyxx23</a>
+      <span class="badge badge-ok">сдано</span>
+      <span class="flake-count" tabindex="0" data-flake8="[&quot;Не проверялось&quot;]">flake8: 0</span>
+    </div>
+  </div>
+  <div class="student-body">
+  <h3>Индивидуальные задания</h3>
+<table>
+<thead>
+<tr>
+<th>Задание</th>
+<th>Статус</th>
+<th>Факт</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lab5, задание 1 (verify_log)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab5, задание 2 (kick_targets)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 1 (turn_in)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 2 (answer)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Итог: сдано.</strong></p>
+<h3>Работа в парах</h3>
+<ul>
+<li>lab5: пара не назначалась (задание выдавалось индивидуально)</li>
+<li>lab6: пара с П. Кондрашевой — выполнена (взаимно: тесты на PR)</li>
+</ul>
+<h3>ИИ-экспертиза</h3>
+<ul>
+<li>Признаки ИИ-генерации: <strong>обнаружены отдельные слабые сигналы</strong>.</li>
+</ul>
+  </div>
+</section>
+
+<section class="student" id="s-sixsinscrim">
+  <div class="student-head">
+    <h2>Артур Ослин</h2>
+    <div class="student-meta">
+      <a class="gh-link" href="https://github.com/SixSinScrim" target="_blank" rel="noopener">@SixSinScrim</a>
+      <span class="badge badge-crit">не сдано</span>
+      <span class="flake-count" tabindex="0" data-flake8="[&quot;Не проверялось&quot;]">flake8: 0</span>
+    </div>
+  </div>
+  <div class="student-body">
+  <h3>Индивидуальные задания</h3>
+<table>
+<thead>
+<tr>
+<th>Задание</th>
+<th>Статус</th>
+<th>Факт</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lab5, задание 1 (classify)</td>
+<td>не сдано</td>
+<td>функция-обёртка не найдена; похожая логика встроена в dispatch с другим контрактом</td>
+</tr>
+<tr>
+<td>lab5, задание 2 (summarize, top_senders)</td>
+<td>не сдано</td>
+<td>решения не найдены</td>
+</tr>
+<tr>
+<td>lab6, задание 1</td>
+<td>не выдавалось</td>
+<td>задания по lab6 не выдавались</td>
+</tr>
+<tr>
+<td>lab6, задание 2</td>
+<td>не выдавалось</td>
+<td>задания по lab6 не выдавались</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Итог: не сдано.</strong></p>
+<h3>Работа в парах</h3>
+<ul>
+<li>lab5: пара с Н. Богдановым — выполнена (взаимно: ревью и тесты на PR)</li>
+<li>lab6: не участвовал</li>
+</ul>
+<h3>ИИ-экспертиза</h3>
+<ul>
+<li>Признаки ИИ-генерации: <strong>не обнаружены</strong>.</li>
+</ul>
+  </div>
+</section>
+
+<section class="student" id="s-d3th0r4">
+  <div class="student-head">
+    <h2>Полина Пашкова</h2>
+    <div class="student-meta">
+      <a class="gh-link" href="https://github.com/d3th0r4" target="_blank" rel="noopener">@d3th0r4</a>
+      <span class="badge badge-fail">сдано частично</span>
+      <span class="flake-count" tabindex="0" data-flake8="[&quot;Не проверялось&quot;]">flake8: 0</span>
+    </div>
+  </div>
+  <div class="student-body">
+  <h3>Индивидуальные задания</h3>
+<table>
+<thead>
+<tr>
+<th>Задание</th>
+<th>Статус</th>
+<th>Факт</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lab5, задание 1 (report)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab5, задание 2 (call_handler)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 1 (test_turnin_frees_slot)</td>
+<td>сдано</td>
+<td>тест найден, проходит</td>
+</tr>
+<tr>
+<td>lab6, задание 2 (patch_is_consistent + объяснение)</td>
+<td>сдано частично</td>
+<td>функция найдена и работает; обязательное письменное объяснение отсутствует</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Итог: сдано частично.</strong></p>
+<h3>Работа в парах</h3>
+<ul>
+<li>lab5: пара с Э. Ибраевым — выполнена (взаимные ревью на PR)</li>
+<li>lab6: пара с С. Султановым — выполнена (взаимно: тесты на PR)</li>
+</ul>
+<h3>ИИ-экспертиза</h3>
+<ul>
+<li>Признаки ИИ-генерации: <strong>не обнаружены</strong>.</li>
+</ul>
+  </div>
+</section>
+
+<section class="student" id="s-lshhsh00">
+  <div class="student-head">
+    <h2>Лилиана Ризванова</h2>
+    <div class="student-meta">
+      <a class="gh-link" href="https://github.com/lshhsh00" target="_blank" rel="noopener">@lshhsh00</a>
+      <span class="badge badge-ok">сдано</span>
+      <span class="flake-count" tabindex="0" data-flake8="[&quot;Не проверялось&quot;]">flake8: 0</span>
+    </div>
+  </div>
+  <div class="student-body">
+  <h3>Индивидуальные задания</h3>
+<table>
+<thead>
+<tr>
+<th>Задание</th>
+<th>Статус</th>
+<th>Факт</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lab5, задание 1 (stats)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab5, задание 2 (missing_params)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 1 (apply_patch)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 2 (replay)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Итог: сдано.</strong></p>
+<h3>Работа в парах</h3>
+<ul>
+<li>lab5: пара не назначалась (задание выдавалось индивидуально)</li>
+<li>lab6: пара с У. Антоновой — выполнена (взаимные ревью на PR)</li>
+</ul>
+<h3>ИИ-экспертиза</h3>
+<ul>
+<li>Признаки ИИ-генерации: <strong>обнаружены отдельные слабые сигналы</strong>.</li>
+</ul>
+  </div>
+</section>
+
+<section class="student" id="s-sablingeorge">
+  <div class="student-head">
+    <h2>Георгий Саблин</h2>
+    <div class="student-meta">
+      <a class="gh-link" href="https://github.com/sablingeorge" target="_blank" rel="noopener">@sablingeorge</a>
+      <span class="badge badge-ok">сдано</span>
+      <span class="flake-count" tabindex="0" data-flake8="[&quot;Не проверялось&quot;]">flake8: 0</span>
+    </div>
+  </div>
+  <div class="student-body">
+  <h3>Индивидуальные задания</h3>
+<table>
+<thead>
+<tr>
+<th>Задание</th>
+<th>Статус</th>
+<th>Факт</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lab5, задание 1 (bind_report)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab5, задание 2 (requires_role_strict, to_denied)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 1 (payouts)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 2 (apply_patch)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Итог: сдано.</strong></p>
+<h3>Работа в парах</h3>
+<ul>
+<li>lab5: лайн-кодер, пара не назначалась</li>
+<li>lab6: пара с Л. Горбачевым — выполнена (взаимно: ревью и тесты на PR)</li>
+</ul>
+<h3>ИИ-экспертиза</h3>
+<ul>
+<li>Признаки ИИ-генерации: <strong>обнаружены отдельные слабые сигналы</strong>.</li>
+</ul>
+  </div>
+</section>
+
+<section class="student" id="s-egor137-yaj">
+  <div class="student-head">
+    <h2>Егор Сидельников</h2>
+    <div class="student-meta">
+      <a class="gh-link" href="https://github.com/Egor137-YaJ" target="_blank" rel="noopener">@Egor137-YaJ</a>
+      <span class="badge badge-fail">сдано частично</span>
+      <span class="flake-count" tabindex="0" data-flake8="[&quot;Не проверялось&quot;]">flake8: 0</span>
+    </div>
+  </div>
+  <div class="student-body">
+  <h3>Индивидуальные задания</h3>
+<table>
+<thead>
+<tr>
+<th>Задание</th>
+<th>Статус</th>
+<th>Факт</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lab5, задание 1 (can_kick)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab5, задание 2 (check_args)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 1 (test_remove_pays_half)</td>
+<td>сдано частично</td>
+<td>тест написан; в сданном репозитории 5 из 9 тестов падают из-за замены world.json в conftest</td>
+</tr>
+<tr>
+<td>lab6, задание 2 (test_sec + объяснение)</td>
+<td>сдано частично</td>
+<td>тест написан, расхождение с valera подтверждено; пошаговая выписка и письменное объяснение отсутствуют</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Итог: сдано частично.</strong></p>
+<h3>Работа в парах</h3>
+<ul>
+<li>lab5: пара с У. Антоновой — выполнена (взаимные ревью на PR)</li>
+<li>lab6: пара с Э. Ибраевым — выполнена (взаимно: тесты на PR)</li>
+</ul>
+<h3>ИИ-экспертиза</h3>
+<ul>
+<li>Признаки ИИ-генерации: <strong>не обнаружены</strong>.</li>
+</ul>
+  </div>
+</section>
+
+<section class="student" id="s-wolf-of-mh-st">
+  <div class="student-head">
+    <h2>Саид Султанов</h2>
+    <div class="student-meta">
+      <a class="gh-link" href="https://github.com/Wolf-of-MH-st" target="_blank" rel="noopener">@Wolf-of-MH-st</a>
+      <span class="badge badge-fail">сдано частично</span>
+      <span class="flake-count" tabindex="0" data-flake8="[&quot;Не проверялось&quot;]">flake8: 0</span>
+    </div>
+  </div>
+  <div class="student-body">
+  <h3>Индивидуальные задания</h3>
+<table>
+<thead>
+<tr>
+<th>Задание</th>
+<th>Статус</th>
+<th>Факт</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lab5, задание 1 (can_kick)</td>
+<td>сдано частично</td>
+<td>функция найдена, примеры проходят; случай цели без гильдии не покрыт (возвращает True)</td>
+</tr>
+<tr>
+<td>lab5, задание 2 (find_player)</td>
+<td>сдано частично</td>
+<td>функция найдена; 2 из 4 примеров не проходят — поиск регистронезависимый</td>
+</tr>
+<tr>
+<td>lab6, задание 1 (new_state)</td>
+<td>сдано частично</td>
+<td>функция найдена; ошибка (quests записываются в players) — все 6 тестов лабы падают</td>
+</tr>
+<tr>
+<td>lab6, задание 2 (accept)</td>
+<td>сдано частично</td>
+<td>логика функции верна; на собственном сервере невоспроизводима из-за ошибки в new_state</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Итог: сдано частично.</strong></p>
+<h3>Работа в парах</h3>
+<ul>
+<li>lab5: пара с О. Колищук — выполнена частично: тесты переданы напарнику, встречной активности на его PR не зафиксировано</li>
+<li>lab6: пара с П. Пашковой — выполнена (взаимно: тесты на PR)</li>
+</ul>
+<h3>ИИ-экспертиза</h3>
+<ul>
+<li>Признаки ИИ-генерации: <strong>не обнаружены</strong>.</li>
+</ul>
+  </div>
+</section>
+
+<section class="student" id="s-nitospb">
+  <div class="student-head">
+    <h2>Никита Толочко</h2>
+    <div class="student-meta">
+      <a class="gh-link" href="https://github.com/Nitospb" target="_blank" rel="noopener">@Nitospb</a>
+      <span class="badge badge-crit">не сдано</span>
+      <span class="flake-count" tabindex="0" data-flake8="[&quot;Не проверялось&quot;]">flake8: 0</span>
+    </div>
+  </div>
+  <div class="student-body">
+  <h3>Индивидуальные задания</h3>
+<table>
+<thead>
+<tr>
+<th>Задание</th>
+<th>Статус</th>
+<th>Факт</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lab5, задание 1 (rate_limit)</td>
+<td>не сдано</td>
+<td>решение не найдено</td>
+</tr>
+<tr>
+<td>lab5, задание 2 (bind_prefix)</td>
+<td>не сдано</td>
+<td>решение не найдено</td>
+</tr>
+<tr>
+<td>lab6, задание 1 (simulate)</td>
+<td>не сдано</td>
+<td>решение не найдено</td>
+</tr>
+<tr>
+<td>lab6, задание 2 (audit)</td>
+<td>не сдано</td>
+<td>решение не найдено</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Итог: не сдано.</strong></p>
+<h3>Работа в парах</h3>
+<ul>
+<li>lab5: пара не назначалась (задание выдавалось индивидуально)</li>
+<li>lab6: пара с О. Колищук — выполнена (взаимные ревью на PR)</li>
+</ul>
+<h3>ИИ-экспертиза</h3>
+<ul>
+<li>Признаки ИИ-генерации: <strong>не обнаружены</strong>.</li>
+</ul>
+  </div>
+</section>
+
+<section class="student" id="s-mrw0wa">
+  <div class="student-head">
+    <h2>Владимир Хмелевский</h2>
+    <div class="student-meta">
+      <a class="gh-link" href="https://github.com/MrW0Wa" target="_blank" rel="noopener">@MrW0Wa</a>
+      <span class="badge badge-ok">сдано</span>
+      <span class="flake-count" tabindex="0" data-flake8="[&quot;Не проверялось&quot;]">flake8: 0</span>
+    </div>
+  </div>
+  <div class="student-body">
+  <h3>Индивидуальные задания</h3>
+<table>
+<thead>
+<tr>
+<th>Задание</th>
+<th>Статус</th>
+<th>Факт</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lab5, задание 1 (dispatch)</td>
+<td>сдано</td>
+<td>функция найдена, примеры проходят; после её добавления лабораторный вызов dispatch перестаёт работать — 19 из 22 тестов лабы падают</td>
+</tr>
+<tr>
+<td>lab5, задание 2 (requires_role)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 1 (audit)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 2 (turn_in_all_ready)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Итог: сдано.</strong></p>
+<h3>Работа в парах</h3>
+<ul>
+<li>lab5: пара не назначалась (задание выдавалось индивидуально)</li>
+<li>lab6: пара с Е. Чиргиной — выполнена (взаимные ревью на PR)</li>
+</ul>
+<h3>ИИ-экспертиза</h3>
+<ul>
+<li>Признаки ИИ-генерации: <strong>не обнаружены</strong>.</li>
+</ul>
+  </div>
+</section>
+
+<section class="student" id="s-burmaldy">
+  <div class="student-head">
+    <h2>Евгения Чиргина</h2>
+    <div class="student-meta">
+      <a class="gh-link" href="https://github.com/burmaldy" target="_blank" rel="noopener">@burmaldy</a>
+      <span class="badge badge-fail">сдано частично</span>
+      <span class="flake-count" tabindex="0" data-flake8="[&quot;Не проверялось&quot;]">flake8: 0</span>
+    </div>
+  </div>
+  <div class="student-body">
+  <h3>Индивидуальные задания</h3>
+<table>
+<thead>
+<tr>
+<th>Задание</th>
+<th>Статус</th>
+<th>Факт</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lab5, задание 1 (can_kick)</td>
+<td>сдано частично</td>
+<td>функции найдены; файл не запускается — синтаксическая ошибка (solution.py:167); при точечном исправлении поломок логика примерами подтверждается</td>
+</tr>
+<tr>
+<td>lab5, задание 2 (requires_min_role)</td>
+<td>сдано частично</td>
+<td>то же — решение есть, файл не компилируется</td>
+</tr>
+<tr>
+<td>lab6, задание 1 (compensation_report)</td>
+<td>не сдано</td>
+<td>решение не найдено</td>
+</tr>
+<tr>
+<td>lab6, задание 2 (test_remove_ready_quest)</td>
+<td>не сдано</td>
+<td>тест не найден</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Итог: сдано частично.</strong></p>
+<h3>Работа в парах</h3>
+<ul>
+<li>lab5: пара с Л. Горбачевым — выполнена (взаимно: замечание и тесты на PR)</li>
+<li>lab6: пара с В. Хмелевским — выполнена (взаимные ревью на PR)</li>
+</ul>
+<h3>ИИ-экспертиза</h3>
+<ul>
+<li>Признаки ИИ-генерации: <strong>не обнаружены</strong>.</li>
+</ul>
+  </div>
+</section>
+
+<section class="student" id="s-johnnyshish">
+  <div class="student-head">
+    <h2>Евгений Шишпаренок</h2>
+    <div class="student-meta">
+      <a class="gh-link" href="https://github.com/JohnnyShish" target="_blank" rel="noopener">@JohnnyShish</a>
+      <span class="badge badge-fail">сдано частично</span>
+      <span class="flake-count" tabindex="0" data-flake8="[&quot;Не проверялось&quot;]">flake8: 0</span>
+    </div>
+  </div>
+  <div class="student-body">
+  <h3>Индивидуальные задания</h3>
+<table>
+<thead>
+<tr>
+<th>Задание</th>
+<th>Статус</th>
+<th>Факт</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lab5, задание 1 (dispatch)</td>
+<td>не сдано</td>
+<td>решение не найдено</td>
+</tr>
+<tr>
+<td>lab5, задание 2 (requires_role)</td>
+<td>сдано</td>
+<td>функция найдена, все примеры из задания проходят</td>
+</tr>
+<tr>
+<td>lab6, задание 1</td>
+<td>не выдавалось</td>
+<td>задания по lab6 не выдавались</td>
+</tr>
+<tr>
+<td>lab6, задание 2</td>
+<td>не выдавалось</td>
+<td>задания по lab6 не выдавались</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Итог: сдано частично.</strong></p>
+<h3>Работа в парах</h3>
+<ul>
+<li>lab5: пара не назначалась (задание выдавалось индивидуально)</li>
+<li>lab6: не участвовал</li>
+</ul>
+<h3>ИИ-экспертиза</h3>
+<ul>
+<li>Признаки ИИ-генерации: <strong>обнаружены отдельные слабые сигналы</strong>.</li>
+</ul>
+  </div>
+</section>
+
+      <footer>
+        Ревью подготовлено как подсказка для проверяющих — не итоговая оценка. TL;DR и список замечаний не заменяют собственное чтение диффа, тест-кейсы стоит прогнать перед защитой, задачи на лайвкодинг подобраны под слабые/сильные места конкретного решения.
+      </footer>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="modalBackdrop" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-head">
+      <h2 id="modalTitle">Сводная таблица по группе</h2>
+      <button class="modal-close" id="modalCloseBtn" type="button" aria-label="Закрыть">×</button>
+    </div>
+    <div class="modal-scroll">
+      <table class="summary">
+        <thead><tr><th>Студент</th><th>GitHub</th><th>Статус</th><th>flake8</th><th>Суть</th></tr></thead>
+        <tbody>
+        <tr><td><a href="#s-ulitocha">Ульяна Антонова</a></td><td>@ulitocha</td><td><span class="badge badge-ok">сдано</span></td><td class="num">0</td><td class="note">lab5: 2/2 · lab6: 2/2 · пары: обе</td></tr>
+<tr><td><a href="#s-astrahantsevsavely">Савелий Астраханцев</a></td><td>@AstrahantsevSavely</td><td><span class="badge badge-ok">сдано</span></td><td class="num">0</td><td class="note">lab5: 2/2 · lab6: 2/2 · пары: обе</td></tr>
+<tr><td><a href="#s-nukemen135">Никита Богданов</a></td><td>@nukemen135</td><td><span class="badge badge-fail">сдано частично</span></td><td class="num">0</td><td class="note">lab5: 1 сдано, 1 частично · lab6: 0/2 · пары: обе</td></tr>
+<tr><td><a href="#s-lag-028">Леонид Горбачев</a></td><td>@Lag-028</td><td><span class="badge badge-ok">сдано</span></td><td class="num">0</td><td class="note">lab5: 2/2 · lab6: 2/2 · пары: обе</td></tr>
+<tr><td><a href="#s-metze322">Эмиль Ибраев</a></td><td>@metze322</td><td><span class="badge badge-ok">сдано</span></td><td class="num">0</td><td class="note">lab5: 2/2 · lab6: 2/2 · пары: обе</td></tr>
+<tr><td><a href="#s-ogre-mager">Григорий Каган</a></td><td>@Ogre-Mager</td><td><span class="badge badge-ok">сдано</span></td><td class="num">0</td><td class="note">lab5: 2/2 · lab6: не выдавались · пары: lab5</td></tr>
+<tr><td><a href="#s-olesyafrogi">Олеся Колищук</a></td><td>@OlesyaFrogi</td><td><span class="badge badge-fail">сдано частично</span></td><td class="num">0</td><td class="note">lab5: 1 сдано, 1 не сдано · lab6: 2/2 · пары: lab6, lab5 частично</td></tr>
+<tr><td><a href="#s-quelsorr">Полина Кондрашева</a></td><td>@quelsorr</td><td><span class="badge badge-ok">сдано</span></td><td class="num">0</td><td class="note">lab5: 2/2 · lab6: 2/2 · пары: lab6</td></tr>
+<tr><td><a href="#s-entepp">Амирхазрат Нарзиев</a></td><td>@entepp</td><td><span class="badge badge-fail">сдано частично</span></td><td class="num">0</td><td class="note">lab5: 1 сдано, 1 не сдано · lab6: не выдавались · пары не было</td></tr>
+<tr><td><a href="#s-varyxx23">Варвара Овтина</a></td><td>@varyxx23</td><td><span class="badge badge-ok">сдано</span></td><td class="num">0</td><td class="note">lab5: 2/2 · lab6: 2/2 · пары: lab6</td></tr>
+<tr><td><a href="#s-sixsinscrim">Артур Ослин</a></td><td>@SixSinScrim</td><td><span class="badge badge-crit">не сдано</span></td><td class="num">0</td><td class="note">lab5: 0/2 · lab6: не выдавались · пары: lab5</td></tr>
+<tr><td><a href="#s-d3th0r4">Полина Пашкова</a></td><td>@d3th0r4</td><td><span class="badge badge-fail">сдано частично</span></td><td class="num">0</td><td class="note">lab5: 2/2 · lab6: 1 сдано, 1 частично · пары: обе</td></tr>
+<tr><td><a href="#s-lshhsh00">Лилиана Ризванова</a></td><td>@lshhsh00</td><td><span class="badge badge-ok">сдано</span></td><td class="num">0</td><td class="note">lab5: 2/2 · lab6: 2/2 · пары: lab6</td></tr>
+<tr><td><a href="#s-sablingeorge">Георгий Саблин</a></td><td>@sablingeorge</td><td><span class="badge badge-ok">сдано</span></td><td class="num">0</td><td class="note">lab5: 2/2 · lab6: 2/2 · пары: lab6 (lab5 — лайв-кодер)</td></tr>
+<tr><td><a href="#s-egor137-yaj">Егор Сидельников</a></td><td>@Egor137-YaJ</td><td><span class="badge badge-fail">сдано частично</span></td><td class="num">0</td><td class="note">lab5: 2/2 · lab6: 2 частично · пары: обе</td></tr>
+<tr><td><a href="#s-wolf-of-mh-st">Саид Султанов</a></td><td>@Wolf-of-MH-st</td><td><span class="badge badge-fail">сдано частично</span></td><td class="num">0</td><td class="note">lab5: 1 сдано, 1 частично · lab6: 2 частично · пары: lab6, lab5 частично</td></tr>
+<tr><td><a href="#s-nitospb">Никита Толочко</a></td><td>@Nitospb</td><td><span class="badge badge-crit">не сдано</span></td><td class="num">0</td><td class="note">lab5: 0/2 · lab6: 0/2 · пары: lab6</td></tr>
+<tr><td><a href="#s-mrw0wa">Владимир Хмелевский</a></td><td>@MrW0Wa</td><td><span class="badge badge-ok">сдано</span></td><td class="num">0</td><td class="note">lab5: 2/2 · lab6: 2/2 · пары: lab6</td></tr>
+<tr><td><a href="#s-burmaldy">Евгения Чиргина</a></td><td>@burmaldy</td><td><span class="badge badge-fail">сдано частично</span></td><td class="num">0</td><td class="note">lab5: 2 частично · lab6: 0/2 · пары: обе</td></tr>
+<tr><td><a href="#s-johnnyshish">Евгений Шишпаренок</a></td><td>@JohnnyShish</td><td><span class="badge badge-fail">сдано частично</span></td><td class="num">0</td><td class="note">lab5: 1 сдано, 1 не сдано · lab6: не выдавались · пары не было</td></tr>
+<tr class="not-submitted"><td>Ярослав Соболев</td><td>@InfinitySIA</td><td><span class="badge badge-crit">не сдано</span></td><td class="num">—</td><td class="note">не участвовал, репозиториев нет (в ростере дубль-аккаунт scraps-itmo-gh)</td></tr>
+<tr class="not-submitted"><td>Ярослав Соболев</td><td>@scraps-itmo-gh</td><td><span class="badge badge-crit">не сдано</span></td><td class="num">—</td><td class="note">второй аккаунт того же студента, репозиториев нет</td></tr>
+<tr class="not-submitted"><td>Матвей Соловьев</td><td>@m0tbka</td><td><span class="badge badge-crit">не сдано</span></td><td class="num">—</td><td class="note">не участвовал, репозиториев нет</td></tr>
+<tr class="not-submitted"><td>Александр Сальников</td><td>@Burnt-out</td><td><span class="badge badge-crit">не сдано</span></td><td class="num">—</td><td class="note">не отмечался и заданий не получал; обе лабы запушены 12.11 вне пар</td></tr>
+<tr class="not-submitted"><td>Максим Шмерлинг</td><td>@smerlingmaksim-dot</td><td><span class="badge badge-crit">не сдано</span></td><td class="num">—</td><td class="note">не отмечался, репозиторий только lab5</td></tr>
+<tr class="not-submitted"><td>Тимур Хабибуллин</td><td>@zindfeel23</td><td><span class="badge badge-crit">не сдано</span></td><td class="num">—</td><td class="note">не участвовал, репозиториев нет</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="tasksBackdrop" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="tasksTitle">
+    <div class="modal-head">
+      <h2 id="tasksTitle"></h2>
+      <button class="modal-close" id="tasksCloseBtn" type="button" aria-label="Закрыть">×</button>
+    </div>
+    <p class="tasks-hint"></p>
+    <input class="tasks-search" id="tasksSearch" type="text" placeholder="Поиск по ФИ или GitHub-нику…">
+    <div class="tasks-bulk">
+      <button class="link-btn" id="selectAllBtn" type="button">Выделить всех</button>
+      <button class="link-btn" id="clearAllBtn" type="button">Снять выбор</button>
+    </div>
+    <div class="tasks-list" id="tasksList"></div>
+    <div class="tasks-actions">
+      <span class="tasks-count" id="tasksCount">Выбрано: 0</span>
+      <button class="table-btn" id="generateTasksBtn" type="button" disabled>Сформировать</button>
+    </div>
+    <div class="tasks-output-wrap">
+      <button class="copy-btn" id="copyTasksBtn" type="button">Копировать</button>
+      <div class="tasks-output" id="tasksOutput"></div>
+    </div>
+  </div>
+</div>
+
+<div class="flake-tip" id="flakeTip"></div>
+
+<script>
+try { hljs.highlightAll(); } catch(e) {}
+
+(function(){
+  var sidebar = document.getElementById('sidebar');
+  var toggle = document.getElementById('sidebarToggle');
+  var scrim = document.getElementById('sidebarScrim');
+  var navList = document.getElementById('navList');
+  var modalBackdrop = document.getElementById('modalBackdrop');
+  var openTableBtn = document.getElementById('openTableBtn');
+  var modalCloseBtn = document.getElementById('modalCloseBtn');
+
+  function openNav(){ document.body.classList.add('nav-open'); sidebar.classList.add('open'); }
+  function closeNav(){ document.body.classList.remove('nav-open'); sidebar.classList.remove('open'); }
+  toggle.addEventListener('click', openNav);
+  scrim.addEventListener('click', closeNav);
+  navList.addEventListener('click', function(e){
+    var item = e.target.closest('.nav-item');
+    if(item && !item.classList.contains('nav-item-disabled')) closeNav();
+  });
+
+  function openModal(){ modalBackdrop.hidden = false; }
+  function closeModal(){ modalBackdrop.hidden = true; }
+  openTableBtn.addEventListener('click', openModal);
+  modalCloseBtn.addEventListener('click', closeModal);
+  modalBackdrop.addEventListener('click', function(e){ if(e.target === modalBackdrop) closeModal(); });
+
+  var tasksBackdrop = document.getElementById('tasksBackdrop');
+  var openTasksBtn = document.getElementById('openTasksBtn');
+  var tasksCloseBtn = document.getElementById('tasksCloseBtn');
+  var tasksSearch = document.getElementById('tasksSearch');
+  var tasksList = document.getElementById('tasksList');
+  var tasksCount = document.getElementById('tasksCount');
+  var generateTasksBtn = document.getElementById('generateTasksBtn');
+  var tasksOutput = document.getElementById('tasksOutput');
+  var copyTasksBtn = document.getElementById('copyTasksBtn');
+
+  function openTasksModal(){ tasksBackdrop.hidden = false; tasksSearch.focus(); }
+  function closeTasksModal(){ tasksBackdrop.hidden = true; }
+  if (openTasksBtn) openTasksBtn.addEventListener('click', openTasksModal);
+  tasksCloseBtn.addEventListener('click', closeTasksModal);
+  tasksBackdrop.addEventListener('click', function(e){ if(e.target === tasksBackdrop) closeTasksModal(); });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ closeModal(); closeTasksModal(); closeNav(); hideFlakeTip(); }
+  });
+
+  var TASKS = {"ulitocha": {"surname": "Антонова", "fullname": "Ульяна Антонова", "task1": "", "task2": ""}, "astrahantsevsavely": {"surname": "Астраханцев", "fullname": "Савелий Астраханцев", "task1": "", "task2": ""}, "nukemen135": {"surname": "Богданов", "fullname": "Никита Богданов", "task1": "", "task2": ""}, "lag-028": {"surname": "Горбачев", "fullname": "Леонид Горбачев", "task1": "", "task2": ""}, "metze322": {"surname": "Ибраев", "fullname": "Эмиль Ибраев", "task1": "", "task2": ""}, "ogre-mager": {"surname": "Каган", "fullname": "Григорий Каган", "task1": "", "task2": ""}, "olesyafrogi": {"surname": "Колищук", "fullname": "Олеся Колищук", "task1": "", "task2": ""}, "quelsorr": {"surname": "Кондрашева", "fullname": "Полина Кондрашева", "task1": "", "task2": ""}, "entepp": {"surname": "Нарзиев", "fullname": "Амирхазрат Нарзиев", "task1": "", "task2": ""}, "varyxx23": {"surname": "Овтина", "fullname": "Варвара Овтина", "task1": "", "task2": ""}, "sixsinscrim": {"surname": "Ослин", "fullname": "Артур Ослин", "task1": "", "task2": ""}, "d3th0r4": {"surname": "Пашкова", "fullname": "Полина Пашкова", "task1": "", "task2": ""}, "lshhsh00": {"surname": "Ризванова", "fullname": "Лилиана Ризванова", "task1": "", "task2": ""}, "sablingeorge": {"surname": "Саблин", "fullname": "Георгий Саблин", "task1": "", "task2": ""}, "egor137-yaj": {"surname": "Сидельников", "fullname": "Егор Сидельников", "task1": "", "task2": ""}, "wolf-of-mh-st": {"surname": "Султанов", "fullname": "Саид Султанов", "task1": "", "task2": ""}, "nitospb": {"surname": "Толочко", "fullname": "Никита Толочко", "task1": "", "task2": ""}, "mrw0wa": {"surname": "Хмелевский", "fullname": "Владимир Хмелевский", "task1": "", "task2": ""}, "burmaldy": {"surname": "Чиргина", "fullname": "Евгения Чиргина", "task1": "", "task2": ""}, "johnnyshish": {"surname": "Шишпаренок", "fullname": "Евгений Шишпаренок", "task1": "", "task2": ""}};
+  var TASK_USERNAMES = Object.keys(TASKS).sort(function(a, b){
+    return TASKS[a].fullname.localeCompare(TASKS[b].fullname, 'ru');
+  });
+
+  TASK_USERNAMES.forEach(function(uname){
+    var d = TASKS[uname];
+    var label = document.createElement('label');
+    label.className = 'tasks-item';
+    label.dataset.search = (d.fullname + ' ' + uname).toLowerCase();
+    var cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.value = uname;
+    var nameSpan = document.createElement('span');
+    nameSpan.className = 'ti-name';
+    nameSpan.textContent = d.fullname;
+    var userSpan = document.createElement('span');
+    userSpan.className = 'ti-user';
+    userSpan.textContent = '@' + uname;
+    label.appendChild(cb);
+    label.appendChild(nameSpan);
+    label.appendChild(userSpan);
+    tasksList.appendChild(label);
+  });
+  if(!TASK_USERNAMES.length){
+    var empty = document.createElement('div');
+    empty.className = 'tasks-empty';
+    empty.textContent = 'Нет сдавших работ в датасете';
+    tasksList.appendChild(empty);
+  }
+
+  function updateTasksCount(){
+    var checked = tasksList.querySelectorAll('input:checked').length;
+    tasksCount.textContent = 'Выбрано: ' + checked;
+    generateTasksBtn.disabled = checked === 0;
+  }
+  tasksList.addEventListener('change', updateTasksCount);
+
+  document.getElementById('selectAllBtn').addEventListener('click', function(){
+    Array.prototype.slice.call(tasksList.querySelectorAll('.tasks-item')).forEach(function(item){
+      if(!item.hidden){
+        var cb = item.querySelector('input');
+        if(cb) cb.checked = true;
+      }
+    });
+    updateTasksCount();
+  });
+  document.getElementById('clearAllBtn').addEventListener('click', function(){
+    tasksList.querySelectorAll('input:checked').forEach(function(cb){ cb.checked = false; });
+    updateTasksCount();
+  });
+
+  tasksSearch.addEventListener('input', function(){
+    var q = tasksSearch.value.trim().toLowerCase();
+    Array.prototype.slice.call(tasksList.querySelectorAll('.tasks-item')).forEach(function(item){
+      item.hidden = q.length > 0 && item.dataset.search.indexOf(q) === -1;
+    });
+  });
+
+  generateTasksBtn.addEventListener('click', function(){
+    if(generateTasksBtn.disabled) return;
+    var checked = Array.prototype.slice.call(tasksList.querySelectorAll('input:checked'));
+    var text = checked.map(function(cb){
+      var d = TASKS[cb.value];
+      return d.surname + ':\n1) ' + d.task1 + '\n2) ' + d.task2;
+    }).join('\n\n');
+    tasksOutput.textContent = text;
+  });
+
+  copyTasksBtn.addEventListener('click', function(){
+    var text = tasksOutput.textContent || '';
+    if(!text) return;
+    function fallback(){
+      var r = document.createRange();
+      r.selectNodeContents(tasksOutput);
+      var sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(r);
+    }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).catch(fallback);
+    } else {
+      fallback();
+    }
+    var old = copyTasksBtn.textContent;
+    copyTasksBtn.textContent = 'Скопировано';
+    setTimeout(function(){ copyTasksBtn.textContent = old; }, 1400);
+  });
+
+  var flakeTip = document.getElementById('flakeTip');
+  var activeFlakeEl = null;
+
+  function renderFlakeTip(el){
+    var raw = el.getAttribute('data-flake8');
+    var lines;
+    try { lines = JSON.parse(raw); } catch(e) { lines = []; }
+    var ul = document.createElement('ul');
+    lines.forEach(function(line){
+      var li = document.createElement('li');
+      li.textContent = line;
+      ul.appendChild(li);
+    });
+    flakeTip.innerHTML = '';
+    flakeTip.appendChild(ul);
+  }
+  function positionFlakeTip(el){
+    var r = el.getBoundingClientRect();
+    flakeTip.classList.add('show');
+    var tipRect = flakeTip.getBoundingClientRect();
+    var left = Math.min(Math.max(8, r.left), window.innerWidth - tipRect.width - 8);
+    var top = r.bottom + 8;
+    if(top + tipRect.height > window.innerHeight - 8){ top = r.top - tipRect.height - 8; }
+    flakeTip.style.left = left + 'px';
+    flakeTip.style.top = Math.max(8, top) + 'px';
+  }
+  function showFlakeTip(el){
+    activeFlakeEl = el;
+    renderFlakeTip(el);
+    flakeTip.classList.add('show');
+    positionFlakeTip(el);
+  }
+  function hideFlakeTip(){
+    activeFlakeEl = null;
+    flakeTip.classList.remove('show');
+  }
+  document.querySelectorAll('.flake-count[data-flake8]').forEach(function(el){
+    el.addEventListener('mouseenter', function(){ showFlakeTip(el); });
+    el.addEventListener('mouseleave', hideFlakeTip);
+    el.addEventListener('focus', function(){ showFlakeTip(el); });
+    el.addEventListener('blur', hideFlakeTip);
+    el.addEventListener('click', function(e){
+      e.preventDefault();
+      if(activeFlakeEl === el) hideFlakeTip(); else showFlakeTip(el);
+    });
+  });
+  window.addEventListener('scroll', function(){ if(activeFlakeEl) positionFlakeTip(activeFlakeEl); }, true);
+
+  var navItems = Array.prototype.slice.call(document.querySelectorAll('.nav-item[data-target]'));
+  var sections = navItems.map(function(a){ return document.getElementById(a.dataset.target); }).filter(Boolean);
+  if('IntersectionObserver' in window && sections.length){
+    var byId = {};
+    navItems.forEach(function(a){ byId[a.dataset.target] = a; });
+    var observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        var link = byId[entry.target.id];
+        if(!link) return;
+        if(entry.isIntersecting) link.classList.add('active');
+        else link.classList.remove('active');
+      });
+    }, { rootMargin: '-10% 0px -70% 0px', threshold: 0 });
+    sections.forEach(function(s){ observer.observe(s); });
+  }
+})();
+</script>
